@@ -79,10 +79,11 @@ endif " has("autocmd")
   " set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
 " endif
 
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
+" Softtabs, 4 spaces
 set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=8
 
 " Always display the status line
 set laststatus=2
@@ -165,13 +166,10 @@ if executable("ack")
 endif
 
 " Color scheme
+colorscheme desert
 " colorscheme vividchalk
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
-
-" Numbers
-set number
-set numberwidth=5
 
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
@@ -192,16 +190,8 @@ set tags=./tags;
 
 let g:fuf_splitPathMatching=1
 
-" Open URL
-command -bar -nargs=1 OpenURL :!open <args>
-function! OpenURL()
-  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
-  echo s:uri
-  if s:uri != ""
-	  exec "!open \"" . s:uri . "\""
-  else
-	  echo "No URI found in line."
-  endif
-endfunction
-map <Leader>w :call OpenURL()<CR>
-
+set autochdir
+set ai "Auto indent
+set si "Smart indet
+set wrap "Wrap lines
+set smarttab

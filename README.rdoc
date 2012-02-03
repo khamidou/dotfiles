@@ -1,3 +1,5 @@
+Note: I removed a lot of files from the Ryan Bates dotfile.
+
 = Ryan Bates Dot Files
 
 These are config files to set up a system the way I like it.
