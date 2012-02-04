@@ -15,14 +15,18 @@ bindkey ^T gosmacs-transpose-chars
 set autolist
 set fignore = ( .o .~ .pyc)
 
-  
+setenv VISUALWORKS /home/karim/vw7.7.1nc
+
+# specify custom ruby gems dir
+setenv GEM_HOME ~/.gems/
+
 # Set an appropriate path - I usually store some binaries in the folder 
 # ~/usrbin.
 # Duplicated the line because of a stupid bug in tcsh
 setenv PATH ~/usrbin:$PATH
 setenv PATH ~/proglangs/go/bin:$PATH
+setenv PATH $GEM_HOME/bin:$PATH
 
-setenv VISUALWORKS /home/karim/vw7.7.1nc
 # Make less a better place to live.
 # -N : displays line numbers
 # -Q : disable ringing
