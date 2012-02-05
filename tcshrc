@@ -97,4 +97,6 @@ alias apti sudo apt-get install
 alias aptr sudo apt-get remove
 
 alias nautilus nautilus --no-desktop
+
+alias w-c wicd-curses
 alias sflew ssh neyret.fr
