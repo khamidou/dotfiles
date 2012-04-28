@@ -74,18 +74,16 @@ alias mdir mkdir -p  # This alias supersedes mtool's mdir but who uses msdos ?
 alias ls ls-F --color=auto # This undocumented feature provide color for ls-F,
                            # a built-in implementation of ls.
 alias s /bin/ls --hide "*.pyc" --hide "*~" --color
+
+# git aliases
 alias co git checkout
 alias br git branch
 alias ch git cherry-pick
+alias cm git commit
+
 alias pk pkill
 
-alias forth gforth # Default forth 
 alias lint splint # I keep confusing splint and split
-
-# Automatic rogue saves.
-alias rs bash rs.sh
-alias xr "xrogue; cp xrogue.sav Documents/rogue-saves/xrogue8/xrogue-`date +%F@%k-%m`"
-alias ars "cp ~/rogue.sav Documents/rogue-saves/original-3.6/rogue-`date +%F@%k-%m`"
 
 alias spindent indent -bad -bap -nsob -cdb -sc -br -cdw -cli3 -npcs -cs -nbc -brs -bbo 
 
