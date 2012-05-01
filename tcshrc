@@ -80,6 +80,7 @@ alias co git checkout
 alias br git branch
 alias ch git cherry-pick
 alias cm git commit
+alias st git status
 
 alias pk pkill
 

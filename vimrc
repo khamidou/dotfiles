@@ -71,13 +71,10 @@ else
 
 endif " has("autocmd")
 
-" if has("folding")
-  " set foldenable
-  " set foldmethod=syntax
-  " set foldlevel=1
-  " set foldnestmax=2
-  " set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
-" endif
+if has("folding")
+ set foldenable
+ set foldmethod=syntax
+endif
 
 " Softtabs, 4 spaces
 set expandtab
@@ -195,3 +192,13 @@ set ai "Auto indent
 set si "Smart indet
 set wrap "Wrap lines
 set smarttab
+
+" turn on omnicompletion
+set ofu=syntaxcomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
