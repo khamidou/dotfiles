@@ -81,6 +81,7 @@ alias br git branch
 alias ch git cherry-pick
 alias cm git commit
 alias st git status
+alias pu git pull
 
 alias pk pkill
 
