@@ -71,10 +71,10 @@ else
 
 endif " has("autocmd")
 
-if has("folding")
- set foldenable
- set foldmethod=syntax
-endif
+"if has("folding")
+" set foldenable
+" set foldmethod=syntax
+"endif
 
 " Softtabs, 4 spaces
 set expandtab
