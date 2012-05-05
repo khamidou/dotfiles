@@ -23,8 +23,7 @@ setenv GEM_HOME ~/.gems/
 # Set an appropriate path - I usually store some binaries in the folder 
 # ~/usrbin.
 # Duplicated the line because of a stupid bug in tcsh
-setenv PATH ~/usrbin:$PATH
-setenv PATH ~/proglangs/go/bin:$PATH
+setenv PATH ~/.bin:$PATH
 setenv PATH $GEM_HOME/bin:$PATH
 
 # Make less a better place to live.
@@ -91,7 +90,7 @@ alias spindent indent -bad -bap -nsob -cdb -sc -br -cdw -cli3 -npcs -cs -nbc -br
 
 alias pig ping google.com
 
-# COmmodity aliases for apt-get :
+# Commodity aliases for apt-get :
 alias apts apt-cache search
 alias apti sudo apt-get install
 alias aptr sudo apt-get remove
