@@ -202,3 +202,9 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
+
+" snipmate 
+autocmd FileType html set ft=htmldjango.html " For SnipMate
+
+" Abbrevs
+cnoreabbrev te tabedit
