@@ -187,11 +187,12 @@ set tags=./tags;
 
 let g:fuf_splitPathMatching=1
 
-set autochdir
 set ai "Auto indent
 set si "Smart indet
 set wrap "Wrap lines
 set smarttab
+set autochdir
+set switchbuf=usetab,newtab
 
 " turn on omnicompletion
 set ofu=syntaxcomplete#Complete
@@ -206,5 +207,10 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 " snipmate 
 autocmd FileType html set ft=htmldjango.html " For SnipMate
 
+" Command-T - by default open files in new tab
+let g:CommandTAcceptSelectionMap = '<C-t>'
+let g:CommandTAcceptSelectionTabMap = '<CR>'
+
 " Abbrevs
 cnoreabbrev te tabedit
+
