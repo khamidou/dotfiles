@@ -5,7 +5,7 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE].include? file
+    next if %w[Rakefile README.rdoc LICENSE fish].include? file
     
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
@@ -50,10 +50,16 @@ def link_file(file)
 end
 
 task :setup => :install do
+    install_config
     install_commandt
 end
 
 def install_commandt
     puts "Compiling command-T"
    system("(cd vim/ruby/command-t; ruby extconf.rb; make clean && make)")
+end
+
+def install_config
+    puts "Compiling command-T"
+    system %Q{ln -s "$PWD/fish" "$HOME/.config/fish"}
 end
