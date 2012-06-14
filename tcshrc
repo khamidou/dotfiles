@@ -32,6 +32,11 @@ setenv PATH $GEM_HOME/bin:$PATH
 
 setenv LESS "-Q"
 setenv EDITOR "emacs -nw"
+
+if($TERM == "xterm") then
+    setenv TERM "xterm-256color"
+endif
+
 # Make "pushd " equivalent to "pushd ~"
 set pushdtohome=1
 
