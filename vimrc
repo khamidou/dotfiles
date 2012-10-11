@@ -191,11 +191,11 @@ set tags=./tags;
 let g:fuf_splitPathMatching=1
 
 set ai "Auto indent
-set si "Smart indet
 set wrap "Wrap lines
 set smarttab
 set autochdir
 set switchbuf=usetab,newtab
+set modeline
 
 " turn on omnicompletion
 set ofu=syntaxcomplete#Complete
@@ -217,5 +217,5 @@ let g:CommandTAcceptSelectionTabMap = '<CR>'
 " Abbrevs
 cnoreabbrev te tabedit
 
-
+au BufRead,BufNewFile *.hx setfiletype haxe
 
