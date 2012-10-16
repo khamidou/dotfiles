@@ -15,13 +15,20 @@ bindkey ^T gosmacs-transpose-chars
 set autolist
 set fignore = ( .o .~ .pyc)
 
+# History remembered is 2000
+set history = 2000          
+# Save and merge with existing saved 
+set savehist = (2000 merge)
+set histfile = ~/.tcsh_history
+
+
 setenv VISUALWORKS /home/karim/vw7.7.1nc
 
 # specify custom ruby gems dir
 setenv GEM_HOME ~/.gems/
 
 # Set an appropriate path - I usually store some binaries in the folder 
-# ~/usrbin.
+# ~/.bin.
 # Duplicated the line because of a stupid bug in tcsh
 setenv PATH ~/.bin:$PATH
 setenv PATH $GEM_HOME/bin:$PATH
@@ -29,7 +36,6 @@ setenv PATH $GEM_HOME/bin:$PATH
 # Make less a better place to live.
 # -N : displays line numbers
 # -Q : disable ringing
-
 setenv LESS "-Q"
 setenv EDITOR "emacs -nw"
 
@@ -68,7 +74,7 @@ alias dirs dirs -v
 
 # Some utility aliases 
 alias m make
-alias emacs emacs23 -nw   # emacs21 is better - but emacs22 has python-mode
+alias emacs emacs23 -nw
 alias l less
 alias n mc
 alias sl ls
