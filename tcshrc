@@ -24,6 +24,9 @@ set histfile = ~/.tcsh_history
 
 setenv VISUALWORKS /home/karim/vw7.7.1nc
 
+# latex package directory
+setenv TEXMFHOME ~/.texmf
+
 # specify custom ruby gems dir
 setenv GEM_HOME ~/.gems/
 
