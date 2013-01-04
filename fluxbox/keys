@@ -1,8 +1,11 @@
 # fluxbox is a bit strange : Mod1 = Alt, Mod4 = Windows.
 Mod1 f   :ExecCommand firefox
 Mod1 m   :Minimize
+Mod1 Shift M   :Maximize
 Mod1 r   :Exec fbrun
 
+Mod4 Left : Exec snap_window left
+Mod4 Right : Exec snap_window right
 # default debian config
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
