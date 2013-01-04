@@ -1,0 +1,16 @@
+#!/usr/bin/env perl
+# a script to snap a window to the left or the
+# right like windows does
+
+$dest = 0;
+if($ARGV[1] == 'right') {
+    # snap to the right
+    $xout = `xdpyinfo |grep dimensions`;
+    $xout =~ /(\d+)x/;
+    $xres = $1;
+
+
+  $dest = $xres / 2;  
+}
+
+`wmctrl -r :ACTIVE: -e 1,$dest,0,-1,-1`
