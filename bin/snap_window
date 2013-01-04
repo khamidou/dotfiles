@@ -1,16 +1,31 @@
 #!/usr/bin/env perl
 # a script to snap a window to the left or the
 # right like windows does
+use File::Basename;
 
-$dest = 0;
-if($ARGV[1] == 'right') {
+# get dimensions
+$xout = `xdpyinfo |grep dimensions`;
+$xout =~ /(\d+)x(\d+)/;
+
+$xres = $1; $yres = $2;
+
+$xdest = 0;
+$ysize = -1;
+$xsize = 150;
+
+
+if($ARGV[0] eq 'left') {
+    # snap to the left
+    $xdest = 0;  
+    $xsize = $xres / 2;
+    $ysize = $yres;  
+} elsif ($ARGV[0] eq 'right') {
     # snap to the right
-    $xout = `xdpyinfo |grep dimensions`;
-    $xout =~ /(\d+)x/;
-    $xres = $1;
-
-
-  $dest = $xres / 2;  
+    $xdest = $xres / 2;  
+    $xsize = $xres / 2;
+    $ysize = $yres;  
+} else {
+    print "usage: " . basename($0) . " [left|right]\n" and exit;
 }
 
-`wmctrl -r :ACTIVE: -e 1,$dest,0,-1,-1`
+`wmctrl -r :ACTIVE: -e 0,$xdest,0,$xsize,$ysize`
