@@ -31,3 +31,37 @@ alias rst='touch tmp/restart.txt'
 
 # commands starting with % for pasting from web
 alias %=' '
+
+# Some utility aliases 
+alias m='make'
+alias emacs='emacs23 -nw'
+alias l='less'
+alias n='mc'
+alias sl='ls'
+alias telnel='telnet'  # This one is particularly annoying.
+alias cls='clear'
+alias mdir='mkdir -p'  # This alias supersedes mtool's mdir but who uses msdos ?
+                           # a built-in implementation of ls.
+
+# git aliases
+alias co='git checkout'
+alias br='git branch'
+alias ch='git cherry-pick'
+alias cm='git commit'
+alias st='git status'
+alias pu='git push'
+
+alias pk='pkill'
+
+alias lint='splint' # I keep confusing splint and split
+
+alias spindent='indent -bad -bap -nsob -cdb -sc -br -cdw -cli3 -npcs -cs -nbc -brs -bbo '
+
+alias pig='ping google.com'
+
+# Commodity aliases for apt-get :
+alias apts='apt-cache search'
+alias apti='sudo apt-get install'
+alias aptr='sudo apt-get remove'
+
+

@@ -1,12 +1,11 @@
-if [[ -n $SSH_CONNECTION ]]; then
-  export PS1='%m:%3~$(git_info_for_prompt)%# '
-else
-  export PS1='%3~$(git_info_for_prompt)%# '
-fi
-
-export EDITOR='vi'
-export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+export LESS="-Q"
+export EDITOR="emacs -nw"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export TERM='xterm-256color'
+export GEM_HOME='~/.gems/'
+
+export PATH="~/.bin:$GEM_HOME/bin:$PATH"
+
 
 #fpath=(~/.zsh/functions $fpath)
 
@@ -34,6 +33,7 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
+PROMPT='%M:%d>' # default prompt
 #zle -N newtab
 #bindkey '^[^[[D' backward-word
 #bindkey '^[^[[C' forward-word

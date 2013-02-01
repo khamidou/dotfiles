@@ -109,6 +109,8 @@ alias apts apt-cache search
 alias apti sudo apt-get install
 alias aptr sudo apt-get remove
 
+alias fif find . -exec grep \!:1 '{}' \; -print
+
 alias nautilus nautilus --no-desktop
 
 alias w-c wicd-curses
