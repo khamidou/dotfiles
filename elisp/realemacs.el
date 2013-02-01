@@ -6,6 +6,13 @@
   
 (global-font-lock-mode 1) ; syntax highlighting
 (ido-mode)
+
+(setq backup-directory-alist `(("." . "~/.emacs_saves"))) ;; put backups in specific dir
+
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-arjen)
+
 ;; evil config
 (require 'evil)
 
@@ -27,6 +34,8 @@
 
 ;; various requires
 (require 'cparen)
+(cparen-activate)
+
 (require 'magit)
 
 
