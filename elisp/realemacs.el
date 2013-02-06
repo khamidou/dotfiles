@@ -29,7 +29,6 @@
 
 (define-key evil-normal-state-map "gb" 'ido-switch-buffer)
 (define-key evil-normal-state-map "gf" 'ido-find-file)
-
 (evil-mode 1)
 
 ;; various requires
@@ -37,6 +36,9 @@
 (cparen-activate)
 
 (require 'magit)
+
+(require 'smart-tab)
+(global-smart-tab-mode 1)
 
 
 

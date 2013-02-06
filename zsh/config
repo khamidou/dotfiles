@@ -4,7 +4,7 @@ export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export TERM='xterm-256color'
 export GEM_HOME='~/.gems/'
 
-export PATH="~/.bin:$GEM_HOME/bin:$PATH"
+export PATH="$HOME/.bin:$GEM_HOME/bin:$PATH"
 
 
 #fpath=(~/.zsh/functions $fpath)
@@ -16,12 +16,10 @@ HISTSIZE=1000
 SAVEHIST=1000
 REPORTTIME=10 # print elapsed time when more than 10 seconds
 
-setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
 setopt NO_LIST_BEEP
 setopt LOCAL_OPTIONS # allow functions to have local options
 setopt LOCAL_TRAPS # allow functions to have local traps
-setopt HIST_VERIFY
 setopt SHARE_HISTORY # share history between sessions ???
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt PROMPT_SUBST
@@ -33,7 +31,11 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
-PROMPT='%M:%d>' # default prompt
+#PROMPT='%M:%d>' # default prompt
+# use a decent prompt
+autoload -U promptinit && promptinit
+prompt suse
+
 #zle -N newtab
 #bindkey '^[^[[D' backward-word
 #bindkey '^[^[[C' forward-word
