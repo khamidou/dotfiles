@@ -2,9 +2,20 @@ export LESS="-Q"
 export EDITOR="emacs -nw"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export TERM='xterm-256color'
-export GEM_HOME='~/.gems/'
+export GEM_HOME="$HOME/.gems"
 
-export PATH="$HOME/.bin:$GEM_HOME/bin:$PATH"
+PATHDIRS=(
+$HOME/.gems/bin
+$HOME/.bin
+/usr/local/go/bin
+)
+
+for dir in $PATHDIRS
+do
+    if [ -d $dir ]; then
+        export PATH=$PATH:$dir
+    fi
+done
 
 
 #fpath=(~/.zsh/functions $fpath)
@@ -44,3 +55,22 @@ prompt suse
 #bindkey '^[[3~' delete-char
 #bindkey '^[^N' newtab
 #bindkey '^?' backward-delete-char 
+
+function act() {
+    FILE=$(findact)
+    if [ $? -eq 0 ]; then
+        echo -n "Source $FILE (y/n) ? "
+        read  yn
+        case $yn in
+        [Yy]* ) source $FILE;
+        esac
+    fi
+}
+
+function runs {
+    source `findact` # activate virtualenv
+    MNPY=$(findact manage.py)
+
+    cd `dirname $MNPY`
+    python $MNPY runserver
+}
