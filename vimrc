@@ -13,20 +13,26 @@ set incsearch		" do incremental searching
 " \ is the leader character
 let mapleader = ","
 
-" Edit the README_FOR_APP (makes :R commands work)
-"map <Leader>R :e doc/README_FOR_APP<CR>
+" shortcuts for fuzzyfilefinder 
+map <Leader>b :FufBuffer<CR>
+map <Leader>f :FufFile<CR>
+
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
 
 " Color scheme
 colorscheme desert
+
+" By default, the pop-up menu seems to be white on pink
+highlight Pmenu ctermbg=black
+highlight Pmenu guibg=black
+
 "set background=light
 "let g:solarized_termcolors=256
 "colorscheme solarized
 " colorscheme vividchalk
-" highlight NonText guibg=#060606
-" highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
+filetype plugin on
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
 
@@ -42,6 +48,11 @@ set smarttab
 set autochdir
 set switchbuf=usetab,newtab
 set modeline
+
+" file finding options
+set wildmenu
+set wildmode=longest:full,full
+
 
 " Abbrevs
 cnoreabbrev te tabedit
