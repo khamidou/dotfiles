@@ -16,6 +16,8 @@ let mapleader = ","
 " shortcuts for fuzzyfilefinder 
 map <Leader>b :FufBuffer<CR>
 map <Leader>f :FufFile<CR>
+map <Leader>w :w<CR>
+map <Leader>t 
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
@@ -42,12 +44,19 @@ let g:snippetsEmu_key = "<S-Tab>"
 " set wildmode=list:longest,list:full
 " set complete=.,t
 
+set hidden " work like emacs for buffers
+
 set smartindent 
 set wrap "Wrap lines
 set smarttab
 set autochdir
 set switchbuf=usetab,newtab
 set modeline
+
+" always use four spaces 
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " file finding options
 set wildmenu

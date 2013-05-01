@@ -4,7 +4,7 @@
 import sys
 import os
 
-excluded_files = ["Rakefile", "README.rdoc", "LICENSE", "fish", "setup.py"]
+excluded_files = ["Rakefile", "README.rdoc", "LICENSE", "fish", "setup.py", ".git", ".gitignore"]
 destdir = os.getenv('HOME')
 
 if len(sys.argv) == 2:
