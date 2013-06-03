@@ -56,4 +56,7 @@ alias aptr='sudo apt-get remove'
 
 alias py='python'
 
+# start firefox and display the profile manager
+alias ffo='firefox -no-remote -P'
+
 
