@@ -1,0 +1,18 @@
+# activate TLS if available on the server
+set ssl_starttls=yes
+
+# always use SSL when connecting to a server
+set ssl_force_tls=yes
+# Automatically poll subscribed mailboxes for new mail (new in 1.5.11)
+set imap_check_subscribed
+
+# Reduce polling frequency to a sane level
+set mail_check=60
+
+# keep a cache of headers for faster loading (1.5.9+?)
+set header_cache=~/.hcache
+
+# Display download progress every 5K
+set net_inc=5
+
+source ~/.mutt_accounts

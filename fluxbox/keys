@@ -1,5 +1,5 @@
 # fluxbox is a bit strange : Mod1 = Alt, Mod4 = Windows.
-Mod1 f   :ExecCommand firefox
+Mod1 f   :ExecCommand ~/softs/firefox/firefox
 Mod1 m   :Minimize
 Mod1 Shift M   :Maximize
 Mod1 r   :Exec fbrun

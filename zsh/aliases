@@ -1,6 +1,9 @@
 # cd
 alias ..='cd ..'
 
+# jobs
+alias %='%%' # copy the syntax in tcsh
+
 # ls
 alias ls="ls -F --color=auto"
 alias l="ls -lAh"
@@ -18,9 +21,6 @@ alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
-
-# commands starting with % for pasting from web
-alias %=' '
 
 # Some utility aliases 
 alias m='make'
@@ -59,4 +59,5 @@ alias py='python'
 # start firefox and display the profile manager
 alias ffo='firefox -no-remote -P'
 
-
+# redshift, with hardcoded paris location
+alias reds='redshift -l 33:-96' 

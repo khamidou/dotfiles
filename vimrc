@@ -17,6 +17,7 @@ let mapleader = ","
 map <Leader>b :FufBuffer<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
+map <Leader>d :bd<CR>
 map <Leader>t 
 
 " Press ^F from insert mode to insert the current file name
