@@ -63,6 +63,11 @@ set expandtab
 set wildmenu
 set wildmode=longest:full,full
 
+set textwidth=80
+set formatoptions+=t
+
+" set colorcolumn=+1 
+" hi ColorColumn guibg=#2e2e2e ctermbg=237
 
 " Abbrevs
 cnoreabbrev te tabedit
