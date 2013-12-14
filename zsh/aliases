@@ -61,3 +61,5 @@ alias ffo='firefox -no-remote -P'
 
 # redshift, with hardcoded paris location
 alias reds='redshift -l 33:-96' 
+
+alias vg='vagrant'

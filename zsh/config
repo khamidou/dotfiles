@@ -1,5 +1,5 @@
 export LESS="-Q"
-export EDITOR="emacs -nw"
+export EDITOR="vim"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export TERM='xterm-256color'
 
