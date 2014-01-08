@@ -48,7 +48,11 @@ let g:snippetsEmu_key = "<S-Tab>"
 set hidden " work like emacs for buffers
 
 set smartindent 
-set wrap "Wrap lines
+
+"set wrap "Wrap lines
+"set textwidth=80
+"set formatoptions+=t
+
 set smarttab
 set autochdir
 set switchbuf=usetab,newtab
@@ -63,8 +67,6 @@ set expandtab
 set wildmenu
 set wildmode=longest:full,full
 
-set textwidth=80
-set formatoptions+=t
 
 " set colorcolumn=+1 
 " hi ColorColumn guibg=#2e2e2e ctermbg=237
