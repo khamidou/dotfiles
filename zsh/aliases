@@ -1,9 +1,6 @@
 # cd
 alias ..='cd ..'
 
-# jobs
-alias %='%%' # copy the syntax in tcsh
-
 # ls
 alias ls="ls -F --color=auto"
 alias l="ls -lAh"
@@ -63,3 +60,11 @@ alias ffo='firefox -no-remote -P'
 alias reds='redshift -l 33:-96' 
 
 alias vg='vagrant'
+
+command_exists () {
+        type "$1" &> /dev/null ;
+}
+
+if command_exists ack-grep ; then
+    alias ack='ack-grep' # silly debian and its strange changes
+fi
