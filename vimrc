@@ -67,6 +67,7 @@ set expandtab
 set wildmenu
 set wildmode=longest:full,full
 
+set tags=./tags;/ " look for ctags recursively
 
 " set colorcolumn=+1 
 " hi ColorColumn guibg=#2e2e2e ctermbg=237
