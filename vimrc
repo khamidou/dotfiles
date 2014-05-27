@@ -10,8 +10,9 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set incsearch		" do incremental searching
 
-" \ is the leader character
-let mapleader = ","
+let mapleader = "\<Space>"
+" idiotic vim has this distinction between leader and localleader
+let localleader = ","
 
 " shortcuts for fuzzyfilefinder 
 map <Leader>b :FufBuffer<CR>
