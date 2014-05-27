@@ -79,6 +79,10 @@ function act() {
     fi
 }
 
+function silent_act() {
+    yes | act
+}
+
 function runs {
     source `findact` # activate virtualenv
     MNPY=$(findact manage.py)

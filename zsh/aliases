@@ -60,6 +60,7 @@ alias ffo='firefox -no-remote -P'
 alias reds='redshift -l 33:-96' 
 
 alias vg='vagrant'
+alias gentags='ctags -R .'
 
 command_exists () {
         type "$1" &> /dev/null ;
