@@ -20,6 +20,7 @@ map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
 map <Leader>t 
+map <Leader>r 
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
@@ -47,8 +48,6 @@ let g:snippetsEmu_key = "<S-Tab>"
 " set complete=.,t
 
 set hidden " work like emacs for buffers
-
-set smartindent 
 
 "set wrap "Wrap lines
 "set textwidth=80
