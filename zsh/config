@@ -17,6 +17,7 @@ PATHDIRS=(
     /usr/local/go/bin
     $HOME/softs/sbt/bin
     $HOME/softs/scala-2.10.2/bin
+    $HOME/softs/arcanist/arcanist/bin
 )
 
 for dir in $PATHDIRS
@@ -31,9 +32,9 @@ autoload -U select-word-style
 select-word-style bash
 
 
-#fpath=(~/.zsh/functions $fpath)
+fpath=(~/.zsh/functions $fpath)
 
-#autoload -U ~/.zsh/functions/*(:t)
+autoload -U ~/.zsh/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000

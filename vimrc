@@ -9,24 +9,27 @@ set nowritebackup
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set incsearch		" do incremental searching
+set hlsearch
+set nofoldenable " never liked folding
 
 let mapleader = "\<Space>"
 " idiotic vim has this distinction between leader and localleader
 let localleader = ","
 
-" shortcuts for fuzzyfilefinder 
+" shortcuts for fuzzyfilefinder
 map <Leader>b :FufBuffer<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
-map <Leader>t 
-map <Leader>r 
+" jump to/from tag
+map <Leader>v 
+map <Leader>c 
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
 
-" Color scheme
-colorscheme desert
+" Color scheme it's a custom one copied from desert
+colorscheme cscheme
 
 " By default, the pop-up menu seems to be white on pink
 highlight Pmenu ctermbg=black
@@ -39,7 +42,7 @@ highlight Pmenu guibg=black
 
 filetype plugin on
 " Snippets are activated by Shift+Tab
-let g:snippetsEmu_key = "<S-Tab>"
+let g:snippetsEmu_key = "<Leader>s"
 
 " Tab completion options
 " (only complete to the longest unambiguous match, and show a menu)
@@ -69,8 +72,8 @@ set wildmode=longest:full,full
 
 set tags=./tags;/ " look for ctags recursively
 
-" set colorcolumn=+1 
-" hi ColorColumn guibg=#2e2e2e ctermbg=237
+"set colorcolumn=+1 
+"hi ColorColumn guibg=#2e2e2e ctermbg=237
 
 " Abbrevs
 cnoreabbrev te tabedit

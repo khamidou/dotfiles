@@ -10,4 +10,4 @@ rsync --verbose  --progress --stats --compress --rsh=/usr/bin/ssh \
       --exclude "*.vdi" \
       --exclude "*.sav" \
       --include ".ssh" \
-      ~ "/media/My Passport"
+      ~ "/media/karim/My Passport"
