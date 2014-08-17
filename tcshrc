@@ -15,14 +15,13 @@ bindkey ^T gosmacs-transpose-chars
 set autolist
 set fignore = ( .o .~ .pyc)
 
-# History remembered is 2000
-set history = 2000          
-# Save and merge with existing saved 
+set history = 2000
+# Save and merge with existing saved
 set savehist = (2000 merge)
 set histfile = ~/.tcsh_history
 
-
 setenv VISUALWORKS /home/karim/vw7.7.1nc
+setenv NPM_CONFIG_PREFIX "$HOME/.npm_bins"
 
 # latex package directory
 setenv TEXMFHOME ~/.texmf
@@ -30,11 +29,22 @@ setenv TEXMFHOME ~/.texmf
 # specify custom ruby gems dir
 setenv GEM_HOME ~/.gems/
 
-# Set an appropriate path - I usually store some binaries in the folder 
+# Set an appropriate path - I usually store some binaries in the folder
 # ~/.bin.
 # Duplicated the line because of a stupid bug in tcsh
-setenv PATH ~/.bin:$PATH
-setenv PATH $GEM_HOME/bin:$PATH
+# setenv PATH ~/.bin:$PATH
+# setenv PATH $GEM_HOME/bin:$PATH
+
+set path = (\
+    $path\
+    $HOME/.gems/bin\
+    $HOME/.bin\
+    $NPM_CONFIG_PREFIX/bin\
+    /usr/local/go/bin\
+    $HOME/softs/sbt/bin\
+    $HOME/softs/scala-2.10.2/bin\
+    $HOME/softs/arcanist/arcanist/bin\
+)
 
 # Make less a better place to live.
 # -N : displays line numbers
@@ -95,8 +105,11 @@ alias ch git cherry-pick
 alias cm git commit
 alias st git status
 alias pu git push
+alias gd "git diff --color | less -r"
+
 
 alias pk pkill
+alias hgrep "history | grep"
 
 alias lint splint # I keep confusing splint and split
 
