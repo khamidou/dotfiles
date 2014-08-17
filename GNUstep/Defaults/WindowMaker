@@ -1,0 +1,99 @@
+{
+  LTCMaximizeKey = None;
+  CycleIgnoreMinimized = NO;
+  LastWorkspaceKey = None;
+  MoveToWorkspace9Key = None;
+  PixmapPath = (
+    "~/pixmaps",
+    "~/GNUstep/Library/WindowMaker/Backgrounds",
+    "~/GNUstep/Library/WindowMaker/Pixmaps",
+    "/usr/local/share/WindowMaker/Backgrounds",
+    "/usr/local/share/WindowMaker/Pixmaps",
+    "/usr/share/WindowMaker/Backgrounds",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/local/share/pixmaps",
+    "/usr/share/pixmaps",
+    "/usr/X11R6/include/X11/pixmaps"
+  );
+  IconTitleBack = "#384246";
+  FTitleBack = (hgradient, "rgb:50/5a/5e", "rgb:20/2a/2e");
+  MoveToPrevWorkspaceLayerKey = None;
+  MaximizeKey = "Mod1+M";
+  MoveToWorkspace7Key = None;
+  IconTitleFont = "Arial,Luxi Sans:pixelsize=9";
+  LargeDisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=24";
+  RBCMaximizeKey = None;
+  WindowShortcut10Key = None;
+  MoveToWorkspace2Key = None;
+  WindowShortcut3Key = None;
+  MenuTitleFont = "Trebuchet MS,Luxi Sans:bold:pixelsize=12";
+  WindowRelaunchKey = None;
+  WindowShortcut4Key = None;
+  WorkspaceBack = (fpixmap, "/home/karim/Images/ghost_nebula.jpg", gray20);
+  LBCMaximizeKey = None;
+  WindowShortcut9Key = None;
+  WindowListMouseButton = middle;
+  MoveResizeKey = None;
+  PrevWorkspaceKey = "Control+Mod1+Left";
+  WindowTitleFont = "Trebuchet MS,Luxi Sans:bold:pixelsize=12";
+  MoveToWorkspace8Key = None;
+  LHMaximizeKey = None;
+  MoveToPrevWorkspaceKey = "Mod4+Left";
+  MoveToWorkspace6Key = None;
+  ResizebarBack = (solid, "#a2a0a5");
+  MoveToWorkspace10Key = None;
+  DisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
+  BHMaximizeKey = None;
+  CycleActiveHeadOnly = NO;
+  DockRaiseLowerKey = None;
+  MoveToWorkspace1Key = None;
+  WindowShortcut1Key = None;
+  ShowClipTitle = YES;
+  RHMaximizeKey = None;
+  THMaximizeKey = None;
+  MiniaturizeKey = "Mod4+M";
+  WindowShortcut2Key = None;
+  MoveToNextWorkspaceLayerKey = None;
+  ToggleKbdModeKey = None;
+  MaximusKey = None;
+  WindowShortcut7Key = None;
+  MenuTextBack = (hgradient, "rgb:c2/c0/c5", "rgb:82/80/85");
+  WindowShortcut8Key = None;
+  MoveToLastWorkspaceKey = None;
+  TitleJustify = left;
+  GroupNextKey = None;
+  DisableBlinking = NO;
+  AntialiasedText = YES;
+  MoveToWorkspace5Key = None;
+  NewStyle = YES;
+  MenuTextFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
+  ScreenSwitchKey = None;
+  MenuTitleBack = (hgradient, "rgb:50/5a/5e", "rgb:20/2a/2e");
+  MoveToNextWorkspaceKey = "Mod4+Right";
+  HMaximizeKey = None;
+  ApplicationMenuMouseButton = right;
+  GroupPrevKey = None;
+  NextWorkspaceKey = "Control+Mod1+Right";
+  MoveToWorkspace3Key = None;
+  MinimizeAllKey = None;
+  CClipTitleColor = "rgb:61/61/61";
+  WindowShortcut5Key = None;
+  HideOthersKey = None;
+  IconPath = (
+    "~/pixmaps",
+    "~/GNUstep/Library/Icons",
+    "/usr/local/share/WindowMaker/Icons",
+    "/usr/share/WindowMaker/Icons",
+    "/usr/local/share/icons",
+    "/usr/share/icons",
+    "/usr/X11R6/include/X11/pixmaps"
+  );
+  WindowShortcut6Key = None;
+  PTitleBack = (hgradient, "rgb:51/50/55", "rgb:80/80/80");
+  SaveSessionOnExit = YES;
+  SelectWindowsMouseButton = left;
+  HighlightActiveApp = YES;
+  UTitleBack = (hgradient, "rgb:c2/c0/c5", "rgb:82/80/85");
+  MoveToWorkspace4Key = None;
+  RTCMaximizeKey = None;
+}

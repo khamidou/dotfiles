@@ -1,0 +1,170 @@
+{
+  Dock = {
+    AutoRaiseLower = No;
+    Applications768 = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = No;
+        Command = "-";
+      },
+      {
+        Forced = No;
+        Name = "x-terminal-emulator.XTerm";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = No;
+        Command = "x-terminal-emulator";
+      },
+      {
+        Forced = No;
+        Name = groupLeader.WPrefs;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,2";
+        Lock = Yes;
+        Command = "/usr/lib/GNUstep/System/Applications/WPrefs.app/WPrefs";
+      },
+      {
+        Forced = No;
+        Name = wmbattery.wmbattery;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,3";
+        Lock = Yes;
+        PasteCommand = "wmbattery %s";
+        Command = wmbattery;
+      },
+      {
+        Forced = No;
+        Name = "gnome-terminal.Gnome-terminal";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,4";
+        Lock = No;
+        PasteCommand = "gnome-terminal %s";
+        Command = "gnome-terminal";
+      },
+      {
+        Forced = No;
+        Name = firefox.Firefox;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,5";
+        Lock = No;
+        PasteCommand = "firefox %s";
+        Command = firefox;
+      },
+      {
+        Forced = No;
+        Name = wmclockmon.DockApp;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,6";
+        Lock = No;
+        PasteCommand = "wmclockmon %s";
+        Command = wmclockmon;
+      }
+    );
+    Applications = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = No;
+        Command = "-";
+      },
+      {
+        Forced = No;
+        Name = "x-terminal-emulator.XTerm";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = No;
+        Command = "x-terminal-emulator";
+      },
+      {
+        Forced = No;
+        Name = groupLeader.WPrefs;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,2";
+        Lock = Yes;
+        Command = "/usr/lib/GNUstep/System/Applications/WPrefs.app/WPrefs";
+      },
+      {
+        Forced = No;
+        Name = wmbattery.wmbattery;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,3";
+        Lock = Yes;
+        PasteCommand = "wmbattery %s";
+        Command = wmbattery;
+      },
+      {
+        Forced = No;
+        Name = "gnome-terminal.Gnome-terminal";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,4";
+        Lock = No;
+        PasteCommand = "gnome-terminal %s";
+        Command = "gnome-terminal";
+      },
+      {
+        Forced = No;
+        Name = firefox.Firefox;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,5";
+        Lock = No;
+        PasteCommand = "firefox %s";
+        Command = firefox;
+      },
+      {
+        Forced = No;
+        Name = wmclockmon.DockApp;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,6";
+        Lock = No;
+        PasteCommand = "wmclockmon %s";
+        Command = wmclockmon;
+      }
+    );
+    Lowered = No;
+    Position = "-64,0";
+  };
+  Clip = {
+    Forced = No;
+    Name = Logo.WMClip;
+    BuggyApplication = No;
+    AutoLaunch = No;
+    Position = "1302,703";
+    Lock = No;
+    Command = "-";
+  };
+  Applications = ();
+  Drawers = ();
+  Workspaces = (
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = ();
+        Collapsed = Yes;
+        AutoAttractIcons = No;
+        Lowered = No;
+      };
+      Name = Main;
+    }
+  );
+  Workspace = Main;
+}
