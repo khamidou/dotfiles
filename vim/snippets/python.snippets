@@ -4,6 +4,8 @@ snippet encoding
 	-*- coding: utf-8 -*-
 snippet pdb
 	import pdb ; pdb.set_trace()
+snippet rdb
+	from inbox.util.rdb import break_to_interpreter ; break_to_interpreter()
 snippet imp
 	import ${1:module}
 # Module Docstring
@@ -39,6 +41,9 @@ snippet deff
 snippet defs
 	def ${1:mname}(self, ${2:arg}):
 		${3:pass}
+# Debug print
+snippet pr
+	print "${1:text} %s" %
 # New Property
 snippet property
 	def ${1:foo}():

@@ -6,6 +6,8 @@ qnew = -Ue
 
 [extensions]
 mq =
+hgext.bookmarks =
+hgext.git = 
 
 [diff]
 git = 1
