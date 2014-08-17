@@ -41,12 +41,16 @@
   MoveToPrevWorkspaceKey = "Mod4+Left";
   MoveToWorkspace6Key = None;
   ResizebarBack = (solid, "#a2a0a5");
+  Workspace4Key = "Mod4+apostrophe";
   MoveToWorkspace10Key = None;
   DisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
   BHMaximizeKey = None;
   CycleActiveHeadOnly = NO;
+  Workspace1Key = "Mod4+ampersand";
+  Workspace2Key = "Mod4+Eacute";
   DockRaiseLowerKey = None;
   MoveToWorkspace1Key = None;
+  Workspace3Key = "Mod4+quotedbl";
   WindowShortcut1Key = None;
   ShowClipTitle = YES;
   RHMaximizeKey = None;
