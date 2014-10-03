@@ -1,0 +1,6 @@
+#!/bin/bash
+source `findact` # activate virtualenv
+MNPY=$(findact manage.py)
+
+cd `dirname $MNPY`
+python $MNPY runserver

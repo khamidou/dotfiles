@@ -128,3 +128,9 @@ alias nautilus nautilus --no-desktop
 
 alias w-c wicd-curses
 alias sflew ssh neyret.fr
+
+alias vg vagrant
+alias vs vagrant ssh
+alias gentags ctags -R .
+alias ack ack-grep
+

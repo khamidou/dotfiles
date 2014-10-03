@@ -1,0 +1,2 @@
+#!/bin/sh
+git show --color $1 | less -r

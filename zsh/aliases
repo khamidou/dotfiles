@@ -8,14 +8,13 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # git
-alias gl='git pull'
+alias gl='git log'
 alias gp='git push'
 alias gd='git diff --color | less -r'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
-alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 alias git-rebase-conflicts='git diff --diff-filter=U |less'
@@ -39,6 +38,9 @@ alias cm='git commit'
 alias st='git status'
 alias pu='git push'
 
+# arcanist
+alias arcd='stty sane ; arc diff --preview'
+
 alias pk='pkill'
 
 alias lint='splint' # I keep confusing splint and split
@@ -58,9 +60,13 @@ alias py='python'
 alias ffo='firefox -no-remote -P'
 
 # redshift, with hardcoded paris location
-alias reds='redshift -l 33:-96' 
+alias reds='redshift -l 33:-96'
+
+# download an mp3 from youtube
+alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3'
 
 alias vg='vagrant'
+alias vu='vagrant up'
 alias vs='vagrant ssh'
 alias gentags='ctags -R .'
 
@@ -71,3 +77,5 @@ command_exists () {
 if command_exists ack-grep ; then
     alias ack='ack-grep' # silly debian and its strange changes
 fi
+
+

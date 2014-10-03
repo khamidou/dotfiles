@@ -8,6 +8,9 @@ snippet rdb
 	from inbox.util.rdb import break_to_interpreter ; break_to_interpreter()
 snippet imp
 	import ${1:module}
+snippet query
+	from sqlalchemy.dialects import mysql
+    print str(${1:query}.statement.compile(dialect=mysql.dialect()))
 # Module Docstring
 snippet docs
 	'''

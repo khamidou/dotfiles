@@ -1,4 +1,10 @@
 {
+  emacs24.Emacs24 = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/emacs24.Emacs24.xpm";
+  };
+  shutter.Shutter = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/shutter.Shutter.xpm";
+  };
   liferea.Liferea = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/liferea.Liferea.xpm";
   };
@@ -8,35 +14,28 @@
   firefox.Firefox = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
   };
-  tip_of_the_day.Gimp = {
-    NoMiniaturizeButton = Yes;
-    AlwaysUserIcon = Yes;
-    NoResizebar = Yes;
-    Icon = "wmaker-gimp2.tif";
-    KeepOnTop = Yes;
-    NoCloseButton = Yes;
+  soffice.Soffice = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
+  };
+  asunder.Asunder = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/asunder.Asunder.xpm";
   };
   color_palette.Gimp = {
     AlwaysUserIcon = Yes;
     NoResizebar = Yes;
     Icon = "wmaker-gimp-palette.tif";
   };
+  totem.Totem = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/totem.Totem.xpm";
+  };
   gogglesmm.gogglesmm = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gogglesmm.gogglesmm.xpm";
-  };
-  indexed_color_palette.Gimp = {
-    AlwaysUserIcon = Yes;
-    NoResizebar = Yes;
-    Icon = "wmaker-gimp-palette.tif";
-  };
-  "script-fu.Script-fu" = {
-    Icon = "wmaker-gimp-script-fu.tif";
   };
   KTerm = {
     Icon = GNUterm.tiff;
   };
-  panel = {
-    NoAppIcon = Yes;
+  thunderbird.Thunderbird = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/thunderbird.Thunderbird.xpm";
   };
   Netscape = {
     Icon = "wmaker-netscape.tif";
@@ -45,27 +44,24 @@
     AlwaysUserIcon = Yes;
     Icon = "wmaker-gimp-tooloption.tif";
   };
-  layers_and_channels.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-layers.tif";
+  emacs = {
+    Icon = "wmaker-emacs.tif";
   };
   WPrefs = {
     Icon = "/usr/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.tiff";
   };
-  emacs = {
-    Icon = "wmaker-emacs.tif";
+  evince.Evince = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/evince.Evince.xpm";
   };
-  brushselection.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-brushes.tif";
-  };
-  gradient_editor.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-gradient.tif";
+  midori.Midori = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/midori.Midori.xpm";
   };
   toolbox.Gimp = {
     NoAppIcon = Yes;
     Icon = "wmaker-gimp2.tif";
+  };
+  gedit.Gedit = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gedit.Gedit.xpm";
   };
   WMSoundServer = {
     Icon = Sound.tiff;
@@ -76,20 +72,12 @@
   groupLeader.WPrefs = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
   };
-  gimp_startup.Gimp = {
-    NotClosable = Yes;
-    NoTitlebar = Yes;
-    NotMiniaturizable = Yes;
-    AlwaysUserIcon = Yes;
-    NoResizebar = Yes;
-    Icon = "wmaker-gimp2.tif";
-  };
   patternselection.Gimp = {
     AlwaysUserIcon = Yes;
     Icon = "wmaker-gimp-patterns.tif";
   };
-  NXTerm = {
-    Icon = GNUterm.tiff;
+  gcalctool.Gcalctool = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gcalctool.Gcalctool.xpm";
   };
   image_window.Gimp = {
     AlwaysUserIcon = Yes;
@@ -97,6 +85,9 @@
   };
   Rxvt = {
     Icon = GNUterm.tiff;
+  };
+  yelp.Yelp = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/yelp.Yelp.xpm";
   };
   "Script-fu" = {
     Icon = "wmaker-gimp-script-fu.tif";
@@ -106,27 +97,23 @@
     NoAppIcon = Yes;
     Omnipresent = Yes;
   };
-  Logo.WMPanel = {
-    Icon = GNUstep.tiff;
+  vlc.Vlc = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/vlc.Vlc.xpm";
   };
   Tile.WMClip = {
     Icon = clip.tiff;
   };
-  XTerm = {
-    Icon = GNUterm.tiff;
+  "file-roller.File-roller" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/file-roller.File-roller.xpm";
   };
   "Mozilla-bin" = {
     Icon = "wmaker-nav.tif";
   };
-  Logo.WMDock = {
-    Icon = GNUstep.tiff;
+  gvim.Gvim = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gvim.Gvim.xpm";
   };
   "*" = {
     Icon = defaultAppIcon.tiff;
-  };
-  Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp2.tif";
   };
   "gnome-terminal.Gnome-terminal" = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-terminal.Gnome-terminal.xpm";
@@ -137,5 +124,84 @@
   preferences.Gimp = {
     AlwaysUserIcon = Yes;
     Icon = "wmaker-gimp-prefs.tif";
+  };
+  "calibre-gui.Calibre-gui" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/calibre-gui.Calibre-gui.xpm";
+  };
+  meld.Meld = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/meld.Meld.xpm";
+  };
+  eog.Eog = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/eog.Eog.xpm";
+  };
+  tip_of_the_day.Gimp = {
+    NoMiniaturizeButton = Yes;
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+    Icon = "wmaker-gimp2.tif";
+    KeepOnTop = Yes;
+    NoCloseButton = Yes;
+  };
+  indexed_color_palette.Gimp = {
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+    Icon = "wmaker-gimp-palette.tif";
+  };
+  gimp.Gimp = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
+  };
+  "script-fu.Script-fu" = {
+    Icon = "wmaker-gimp-script-fu.tif";
+  };
+  panel = {
+    NoAppIcon = Yes;
+  };
+  layers_and_channels.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-layers.tif";
+  };
+  thunar.Thunar = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/thunar.Thunar.xpm";
+  };
+  brushselection.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-brushes.tif";
+  };
+  gradient_editor.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-gradient.tif";
+  };
+  gimp_startup.Gimp = {
+    NotClosable = Yes;
+    NoTitlebar = Yes;
+    NotMiniaturizable = Yes;
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+    Icon = "wmaker-gimp2.tif";
+  };
+  workrave.Workrave = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/workrave.Workrave.xpm";
+  };
+  gitg.Gitg = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gitg.Gitg.xpm";
+  };
+  NXTerm = {
+    Icon = GNUterm.tiff;
+  };
+  Logo.WMPanel = {
+    Icon = GNUstep.tiff;
+  };
+  "update-manager.Update-manager" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/update-manager.Update-manager.xpm";
+  };
+  XTerm = {
+    Icon = GNUterm.tiff;
+  };
+  Logo.WMDock = {
+    Icon = GNUstep.tiff;
+  };
+  Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp2.tif";
   };
 }

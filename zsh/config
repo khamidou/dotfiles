@@ -18,12 +18,13 @@ PATHDIRS=(
     $HOME/softs/sbt/bin
     $HOME/softs/scala-2.10.2/bin
     $HOME/softs/arcanist/arcanist/bin
+    $HOME/travail/password-vault/bin
 )
 
 for dir in $PATHDIRS
 do
     if [ -d $dir ]; then
-        export PATH=$PATH:$dir
+        export PATH=$dir:$PATH
     fi
 done
 

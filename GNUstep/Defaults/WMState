@@ -64,10 +64,50 @@
         Name = wmclockmon.DockApp;
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,6";
+        Position = "0,10";
         Lock = No;
         PasteCommand = "wmclockmon %s";
         Command = wmclockmon;
+      },
+      {
+        Forced = No;
+        Name = gogglesmm.gogglesmm;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,6";
+        Lock = No;
+        PasteCommand = "gogglesmm %s";
+        Command = gogglesmm;
+      },
+      {
+        Forced = No;
+        Name = liferea.Liferea;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,7";
+        Lock = No;
+        PasteCommand = "liferea %s";
+        Command = liferea;
+      },
+      {
+        Forced = No;
+        Name = "gnome-alsamixer.Gnome-alsamixer";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,8";
+        Lock = No;
+        PasteCommand = "gnome-alsamixer %s";
+        Command = "gnome-alsamixer";
+      },
+      {
+        Forced = No;
+        Name = workrave.Workrave;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,9";
+        Lock = No;
+        PasteCommand = "workrave %s";
+        Command = workrave;
       }
     );
     Applications = (
@@ -133,10 +173,50 @@
         Name = wmclockmon.DockApp;
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,6";
+        Position = "0,10";
         Lock = No;
         PasteCommand = "wmclockmon %s";
         Command = wmclockmon;
+      },
+      {
+        Forced = No;
+        Name = gogglesmm.gogglesmm;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,6";
+        Lock = No;
+        PasteCommand = "gogglesmm %s";
+        Command = gogglesmm;
+      },
+      {
+        Forced = No;
+        Name = liferea.Liferea;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,7";
+        Lock = No;
+        PasteCommand = "liferea %s";
+        Command = liferea;
+      },
+      {
+        Forced = No;
+        Name = "gnome-alsamixer.Gnome-alsamixer";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,8";
+        Lock = No;
+        PasteCommand = "gnome-alsamixer %s";
+        Command = "gnome-alsamixer";
+      },
+      {
+        Forced = No;
+        Name = workrave.Workrave;
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,9";
+        Lock = No;
+        PasteCommand = "workrave %s";
+        Command = workrave;
       }
     );
     Lowered = No;
@@ -151,7 +231,41 @@
     Lock = No;
     Command = "-";
   };
-  Applications = ();
+  Applications = (
+    {
+      Dock = Dock;
+      Name = "gnome-terminal.Gnome-terminal";
+      Shaded = No;
+      Miniaturized = No;
+      Command = "gnome-terminal";
+      Geometry = "802x519+64+64";
+      Hidden = No;
+      Workspace = "Bureau 3";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = Dock;
+      Name = "gnome-alsamixer.Gnome-alsamixer";
+      Shaded = No;
+      Miniaturized = No;
+      Command = "gnome-alsamixer";
+      Geometry = "1300x735+2+33";
+      Hidden = No;
+      Workspace = "Bureau 2";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = Dock;
+      Name = gogglesmm.gogglesmm;
+      Shaded = No;
+      Miniaturized = No;
+      Command = gogglesmm;
+      Geometry = "1300x735+0+0";
+      Hidden = No;
+      Workspace = "Bureau 2";
+      ShortcutMask = 0;
+    }
+  );
   Drawers = ();
   Workspaces = (
     {
@@ -164,7 +278,40 @@
         Lowered = No;
       };
       Name = Main;
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = ();
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "Bureau 2";
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = ();
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "Bureau 3";
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = ();
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "Bureau 4";
     }
   );
-  Workspace = Main;
+  Workspace = "Bureau 4";
 }
