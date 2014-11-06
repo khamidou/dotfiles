@@ -12,6 +12,10 @@ bindkey -e
 
 bindkey ^T gosmacs-transpose-chars 
 
+bindkey "^R" i-search-back
+bindkey "^S" i-search-fwd
+
+
 set autolist
 set fignore = ( .o .~ .pyc)
 
@@ -29,12 +33,7 @@ setenv TEXMFHOME ~/.texmf
 # specify custom ruby gems dir
 setenv GEM_HOME ~/.gems/
 
-# Set an appropriate path - I usually store some binaries in the folder
-# ~/.bin.
-# Duplicated the line because of a stupid bug in tcsh
-# setenv PATH ~/.bin:$PATH
-# setenv PATH $GEM_HOME/bin:$PATH
-
+# Set an appropriate path
 set path = (\
     $path\
     $HOME/.gems/bin\
@@ -44,6 +43,7 @@ set path = (\
     $HOME/softs/sbt/bin\
     $HOME/softs/scala-2.10.2/bin\
     $HOME/softs/arcanist/arcanist/bin\
+    $HOME/travail/password-vault/bin\
 )
 
 # Make less a better place to live.
@@ -130,7 +130,7 @@ alias w-c wicd-curses
 alias sflew ssh neyret.fr
 
 alias vg vagrant
+alias vu vagrant up
 alias vs vagrant ssh
 alias gentags ctags -R .
 alias ack ack-grep
-

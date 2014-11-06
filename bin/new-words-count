@@ -1,0 +1,2 @@
+#!/bin/sh
+git diff --word-diff=porcelain | grep '^\+' | sed 's/^\+//g' | wc -w
