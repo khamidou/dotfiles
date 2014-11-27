@@ -65,6 +65,7 @@ set modeline
 set tabstop=4
 set shiftwidth=4
 set expandtab
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
 " file finding options
 set wildmenu

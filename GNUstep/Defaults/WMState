@@ -103,7 +103,7 @@
         Forced = No;
         Name = workrave.Workrave;
         BuggyApplication = No;
-        AutoLaunch = Yes;
+        AutoLaunch = No;
         Position = "0,9";
         Lock = No;
         PasteCommand = "workrave %s";
@@ -212,7 +212,7 @@
         Forced = No;
         Name = workrave.Workrave;
         BuggyApplication = No;
-        AutoLaunch = Yes;
+        AutoLaunch = No;
         Position = "0,9";
         Lock = No;
         PasteCommand = "workrave %s";
@@ -233,25 +233,24 @@
   };
   Applications = (
     {
-      Dock = Dock;
       Name = "gnome-terminal.Gnome-terminal";
       Shaded = No;
       Miniaturized = No;
       Command = "gnome-terminal";
-      Geometry = "802x519+64+64";
+      Geometry = "1298x722+0+0";
       Hidden = No;
       Workspace = "Bureau 3";
       ShortcutMask = 0;
     },
     {
       Dock = Dock;
-      Name = "gnome-alsamixer.Gnome-alsamixer";
+      Name = firefox.Firefox;
       Shaded = No;
       Miniaturized = No;
-      Command = "gnome-alsamixer";
-      Geometry = "1300x735+2+33";
+      Command = firefox;
+      Geometry = "1300x735+0+0";
       Hidden = No;
-      Workspace = "Bureau 2";
+      Workspace = "Bureau 3";
       ShortcutMask = 0;
     },
     {
@@ -261,6 +260,17 @@
       Miniaturized = No;
       Command = gogglesmm;
       Geometry = "1300x735+0+0";
+      Hidden = No;
+      Workspace = "Bureau 2";
+      ShortcutMask = 0;
+    },
+    {
+      Dock = Dock;
+      Name = "gnome-alsamixer.Gnome-alsamixer";
+      Shaded = No;
+      Miniaturized = No;
+      Command = "gnome-alsamixer";
+      Geometry = "1300x735+2+33";
       Hidden = No;
       Workspace = "Bureau 2";
       ShortcutMask = 0;
@@ -313,5 +323,5 @@
       Name = "Bureau 4";
     }
   );
-  Workspace = "Bureau 4";
+  Workspace = "Bureau 3";
 }

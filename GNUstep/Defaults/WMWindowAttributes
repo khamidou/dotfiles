@@ -1,24 +1,24 @@
 {
-  emacs24.Emacs24 = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/emacs24.Emacs24.xpm";
-  };
-  shutter.Shutter = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/shutter.Shutter.xpm";
-  };
-  liferea.Liferea = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/liferea.Liferea.xpm";
-  };
-  "gnome-alsamixer.Gnome-alsamixer" = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-alsamixer.Gnome-alsamixer.xpm";
-  };
-  firefox.Firefox = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
+  asunder.Asunder = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/asunder.Asunder.xpm";
   };
   soffice.Soffice = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/soffice.Soffice.xpm";
   };
-  asunder.Asunder = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/asunder.Asunder.xpm";
+  firefox.Firefox = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
+  };
+  "gnome-alsamixer.Gnome-alsamixer" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-alsamixer.Gnome-alsamixer.xpm";
+  };
+  liferea.Liferea = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/liferea.Liferea.xpm";
+  };
+  shutter.Shutter = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/shutter.Shutter.xpm";
+  };
+  emacs24.Emacs24 = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/emacs24.Emacs24.xpm";
   };
   color_palette.Gimp = {
     AlwaysUserIcon = Yes;
@@ -30,6 +30,9 @@
   };
   gogglesmm.gogglesmm = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gogglesmm.gogglesmm.xpm";
+  };
+  "nm-connection-editor.Nm-connection-editor" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/nm-connection-editor.Nm-connection-editor.xpm";
   };
   KTerm = {
     Icon = GNUterm.tiff;
@@ -109,6 +112,9 @@
   "Mozilla-bin" = {
     Icon = "wmaker-nav.tif";
   };
+  skype.Skype = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/skype.Skype.xpm";
+  };
   gvim.Gvim = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gvim.Gvim.xpm";
   };
@@ -128,11 +134,11 @@
   "calibre-gui.Calibre-gui" = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/calibre-gui.Calibre-gui.xpm";
   };
-  meld.Meld = {
-    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/meld.Meld.xpm";
-  };
   eog.Eog = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/eog.Eog.xpm";
+  };
+  meld.Meld = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/meld.Meld.xpm";
   };
   tip_of_the_day.Gimp = {
     NoMiniaturizeButton = Yes;
@@ -150,6 +156,9 @@
   gimp.Gimp = {
     Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
   };
+  "calibre-edit-book.Calibre-edit-book" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/calibre-edit-book.Calibre-edit-book.xpm";
+  };
   "script-fu.Script-fu" = {
     Icon = "wmaker-gimp-script-fu.tif";
   };
@@ -166,6 +175,9 @@
   brushselection.Gimp = {
     AlwaysUserIcon = Yes;
     Icon = "wmaker-gimp-brushes.tif";
+  };
+  "Qt-subapplication.VirtualBox" = {
+    Icon = "/home/karim/GNUstep/Library/WindowMaker/CachedPixmaps/Qt-subapplication.VirtualBox.xpm";
   };
   gradient_editor.Gimp = {
     AlwaysUserIcon = Yes;
