@@ -2,10 +2,14 @@
 alias ..='cd ..'
 
 # ls
-alias ls="ls -F --color=auto"
+# alias ls="ls -F --color=auto"
 alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
+
+if [ $IS_MAC ]; then
+    alias ls='ls -G'
+fi
 
 # git
 alias gl='git log'

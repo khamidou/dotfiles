@@ -17,7 +17,7 @@ PATHDIRS=(
     /usr/local/go/bin
     $HOME/softs/sbt/bin
     $HOME/softs/scala-2.10.2/bin
-    $HOME/softs/arcanist/arcanist/bin
+    $HOME/travail/arcanist/arcanist/bin
     $HOME/travail/password-vault/bin
 )
 
@@ -31,7 +31,6 @@ done
 # use bash-style C-w behaviour
 autoload -U select-word-style
 select-word-style bash
-
 
 fpath=(~/.zsh/functions $fpath)
 
@@ -62,6 +61,12 @@ setopt HIST_REDUCE_BLANKS
 autoload -U promptinit && promptinit
 prompt suse
 
+unamestr=`uname`
+if [ "$unamestr" = 'Darwin' ]; then
+    chpwd () {print -Pn "\e]2; %~/ \a"}
+fi
+
+bindkey -e # Emacs keybindings
 #zle -N newtab
 #bindkey '^[^[[D' backward-word
 #bindkey '^[^[[C' forward-word
