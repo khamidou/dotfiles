@@ -93,3 +93,12 @@ function runs {
     cd `dirname $MNPY`
     python $MNPY runserver
 }
+
+case `uname` in
+  Darwin)
+    . $HOME/.zsh/darwin.sh
+    ;;
+  Linux)
+    . $HOME/.zsh/linux.sh
+    ;;
+esac
