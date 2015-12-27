@@ -2,5 +2,6 @@
 .svn
 *~
 .*.swp
+*.swp
 fluxbox/fbrun_history
 *.o
