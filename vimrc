@@ -17,8 +17,8 @@ let mapleader = "\<Space>"
 let localleader = ","
 
 " shortcuts for fuzzyfilefinder
-map <Leader>b :FufBuffer<CR>
-map <Leader>f :FufFile<CR>
+map <Leader>b :CtrlPBuffer<CR>
+map <Leader>f :CtrlP<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
 " jump to/from tag
