@@ -1,4 +1,4 @@
-# Custom .cshrc 
+# Custom .cshrc
 # Written by Karim Hamidou - on 10/27/07
 #
 
@@ -7,14 +7,12 @@ bindkey -e
 
 # Exchange the two characters before the cursor -*- UNDOCUMENTED -*- :)
 # This emulate  from gosling emacs (i.e : swap the two previous letters and
-# not the current letter and the previous letter (this is emacs standard 
+# not the current letter and the previous letter (this is emacs standard
 # behaviour).
-
-bindkey ^T gosmacs-transpose-chars 
+bindkey ^T gosmacs-transpose-chars
 
 bindkey "^R" i-search-back
 bindkey "^S" i-search-fwd
-
 
 set autolist
 set fignore = ( .o .~ .pyc)
@@ -107,13 +105,8 @@ alias st git status
 alias pu git push
 alias gd "git diff --color | less -r"
 
-
 alias pk pkill
 alias hgrep "history | grep"
-
-alias lint splint # I keep confusing splint and split
-
-alias spindent indent -bad -bap -nsob -cdb -sc -br -cdw -cli3 -npcs -cs -nbc -brs -bbo 
 
 alias pig ping google.com
 
