@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # Darwin-specific settings.
 alias ls='ls -G'
 

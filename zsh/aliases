@@ -7,7 +7,7 @@ alias la='ls -A'
 
 # Some utility aliases
 alias m='make'
-alias emacs='emacs23 -nw'
+alias emacs='emacs -nw'
 alias l='less'
 alias n='mc'
 alias sl='ls'
