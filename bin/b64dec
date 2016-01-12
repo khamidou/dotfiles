@@ -1,0 +1,2 @@
+#!/bin/bash
+pbpaste | do_b64decode
