@@ -1,3 +1,12 @@
+case `uname` in
+  Darwin)
+    . $HOME/.zsh/darwin.sh
+    ;;
+  Linux)
+    . $HOME/.zsh/linux.sh
+    ;;
+esac
+
 export LESS="-Q"
 export EDITOR="vim"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
@@ -56,7 +65,6 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 # setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
-#PROMPT='%M:%d>' # default prompt
 # use a decent prompt
 autoload -U promptinit && promptinit
 prompt suse
