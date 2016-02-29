@@ -43,6 +43,7 @@ alias pu='git push'
 
 # arcanist
 alias arcd='stty sane ; arc diff --preview'
+alias arh='arcd HEAD~1'
 
 alias pk='pkill'
 
