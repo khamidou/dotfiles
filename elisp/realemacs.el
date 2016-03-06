@@ -22,9 +22,9 @@
 ;;	    (setq indent-line-function 'indent-relative)
 	    (sgml-guess-indent)))
 
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-arjen)
+;; (require 'color-theme)
+;; (color-theme-initialize)
+;; (color-theme-arjen)
 
 ;; evil config
 (require 'evil)

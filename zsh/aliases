@@ -40,6 +40,7 @@ alias ch='git cherry-pick'
 alias cm='git commit'
 alias st='git status'
 alias pu='git push'
+alias gd='git diff --color=always | less -r'
 
 # arcanist
 alias arcd='stty sane ; arc diff --preview'

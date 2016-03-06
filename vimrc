@@ -22,6 +22,7 @@ map <Leader>b :FufBuffer<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
+map <Leader>r :FufRenewCache<CR>
 " jump to/from tag
 map <Leader>v 
 map <Leader>c 
@@ -35,11 +36,6 @@ colorscheme cscheme
 " By default, the pop-up menu seems to be white on pink
 highlight Pmenu ctermbg=black
 highlight Pmenu guibg=black
-
-"set background=light
-"let g:solarized_termcolors=256
-"colorscheme solarized
-" colorscheme vividchalk
 
 filetype plugin on
 " Snippets are activated by Shift+Tab
@@ -62,7 +58,7 @@ set autochdir
 set switchbuf=usetab,newtab
 set modeline
 
-" always use four spaces 
+" always use four spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -74,8 +70,13 @@ set wildmode=longest:full,full
 
 set tags=./tags;/ " look for ctags recursively
 
-"set colorcolumn=+1 
+"set colorcolumn=+1
 "hi ColorColumn guibg=#2e2e2e ctermbg=237
 
 " Abbrevs
 cnoreabbrev te tabedit
+
+if executable('ack')
+  " Use ack over grep
+  set grepprg=ack\ --nogroup\ --nocolor
+endif
