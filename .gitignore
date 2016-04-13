@@ -2,3 +2,5 @@ vim/.netrwhist
 vim/.VimballRecord
 *.so
 *.o
+.zsh_history
+.bash_history
