@@ -13,7 +13,7 @@ fi
 # git
 alias gl='git log'
 alias gp='git push'
-alias gd='git diff --color | less -r'
+alias gd='git difftool -y -x "colordiff -y -W $COLUMNS" | less -r'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
