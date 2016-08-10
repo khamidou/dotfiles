@@ -10,18 +10,6 @@ if [ $IS_MAC ]; then
     alias ls='ls -G'
 fi
 
-# git
-alias gl='git log'
-alias gp='git push'
-alias gd='git difftool -y -x "colordiff -y -W $COLUMNS" | less -r'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
-alias git-rebase-conflicts='git diff --diff-filter=U |less'
-
 # Some utility aliases
 alias m='make'
 alias emacs='emacs -nw'
@@ -31,16 +19,16 @@ alias sl='ls'
 alias telnel='telnet'  # This one is particularly annoying.
 alias cls='clear'
 alias mdir='mkdir -p'  # This alias supersedes mtool's mdir but who uses msdos ?
-                           # a built-in implementation of ls.
 
 # git aliases
+alias gl='git log'
 alias co='git checkout'
 alias br='git branch'
 alias ch='git cherry-pick'
 alias cm='git commit'
 alias st='git status'
 alias pu='git push'
-alias gd='git diff --color=always | less -r'
+alias gd='git difftool -y -x "colordiff -y -W $COLUMNS" | less -r'
 
 # arcanist
 alias arcd='stty sane ; arc diff --preview'
