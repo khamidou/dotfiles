@@ -28,7 +28,7 @@ alias ch='git cherry-pick'
 alias cm='git commit'
 alias st='git status'
 alias pu='git push'
-alias gd='git difftool -y -x "colordiff -y -W $COLUMNS" | less -r'
+alias gd='git difftool -y -x "icdiff" | less -r'
 
 # arcanist
 alias arcd='stty sane ; arc diff --preview'
@@ -70,3 +70,5 @@ command_exists () {
 if command_exists ack-grep ; then
     alias ack='ack-grep' # silly debian and its strange changes
 fi
+
+alias yack='ack --type=python'
