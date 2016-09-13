@@ -4,3 +4,9 @@ vim/.VimballRecord
 *.o
 .zsh_history
 .bash_history
+.DS_Store
+.svn
+*~
+.*.swp
+*.swp
+fluxbox/fbrun_history
