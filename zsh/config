@@ -7,6 +7,10 @@ case `uname` in
     ;;
 esac
 
+# Disable Ctrl-S to suspend tasks.
+# It makes it possible to forward search history instead.
+stty -ixon
+
 export LESS="-Q"
 export EDITOR="vim"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
