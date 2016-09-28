@@ -26,6 +26,7 @@ map <Leader>r :FufRenewCache<CR>
 " jump to/from tag
 map <Leader>v 
 map <Leader>c 
+map <Leader>g 1
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
@@ -63,6 +64,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
+" Display JSON files as Javascript
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " file finding options
 set wildmenu
