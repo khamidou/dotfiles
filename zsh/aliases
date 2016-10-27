@@ -21,7 +21,7 @@ alias cls='clear'
 alias mdir='mkdir -p'  # This alias supersedes mtool's mdir but who uses msdos ?
 
 # git aliases
-alias gl='git log'
+alias gl='git log --color | less -r'
 alias co='git checkout'
 alias br='git branch'
 alias ch='git cherry-pick'
