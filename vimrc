@@ -67,6 +67,7 @@ autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
 " Display JSON files as Javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.es6 set ft=javascript
 
 " file finding options
 set wildmenu
