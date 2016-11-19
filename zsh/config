@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 case `uname` in
   Darwin)
     . $HOME/.zsh/darwin.sh
@@ -6,6 +8,10 @@ case `uname` in
     . $HOME/.zsh/linux.sh
     ;;
 esac
+
+if [[ -a $HOME/.zsh/local.sh ]]; then
+    . $HOME/.zsh/local.sh
+fi
 
 # Disable Ctrl-S to suspend tasks.
 # It makes it possible to forward search history instead.
