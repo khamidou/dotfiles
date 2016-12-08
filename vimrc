@@ -27,6 +27,8 @@ map <Leader>r :FufRenewCache<CR>
 map <Leader>v 
 map <Leader>c 
 map <Leader>g 1
+map <Leader>g 1
+map <Leader>p :set paste! paste?<CR>
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
