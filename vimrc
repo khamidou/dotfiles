@@ -72,6 +72,9 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.es6 set ft=javascript
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
+" Display .go files as Golang
+autocmd BufNewFile,BufRead *.go set ft=go
+
 " file finding options
 set wildmenu
 set wildmode=longest:full,full
