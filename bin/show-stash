@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -z "$1" ];
+    then git stash show -p;
+else
+    git stash show -p "stash@{$1}";
+fi
