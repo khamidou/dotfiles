@@ -1,4 +1,8 @@
 #!/bin/sh
+# I can never remember what's git crazy syntax to access stashes
+# so I wrote a script for this.
+# usage: show-stash to show the latest stash
+#        show-stash n to see stash n + 1
 if [ -z "$1" ];
     then git stash show -p;
 else
