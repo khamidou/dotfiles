@@ -56,8 +56,8 @@ fpath=(~/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=50000
+SAVEHIST=50000
 REPORTTIME=10 # print elapsed time when more than 10 seconds
 
 setopt NO_HUP
