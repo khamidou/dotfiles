@@ -3,6 +3,23 @@
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'garbas/vim-snipmate'
+Plugin 'danro/rename.vim'
+
+" Syntax plugins
+Plugin 'scrooloose/syntastic'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
+call vundle#end()            " required
+
 syntax on
 
 set nobackup
@@ -78,6 +95,13 @@ autocmd BufNewFile,BufRead *.go set ft=go
 " file finding options
 set wildmenu
 set wildmode=longest:full,full
+set wildignore+=*.o,*.out,*.obj,*.rbc,*.rbo,*.class,*.gem,*.pyc,*.log
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*.swp,*.bak,*~,._*
+set wildignore+=*/node_modules/*
+set wildignore+=*/bower_components/*
+set wildignore+=*/dist/*
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
 set tags=./tags;/ " look for ctags recursively
 
@@ -91,3 +115,13 @@ if executable('ack')
   " Use ack over grep
   set grepprg=ack\ --nogroup\ --nocolor
 endif
+
+" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=0
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+let g:syntastic_javascript_checkers = ['eslint', 'jshint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:syntastic_python_checkers = ['python', 'pyflakes', 'pep8']
