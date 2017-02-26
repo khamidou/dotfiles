@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'garbas/vim-snipmate'
 Plugin 'danro/rename.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Syntax plugins
 Plugin 'scrooloose/syntastic'
