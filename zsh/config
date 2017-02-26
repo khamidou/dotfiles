@@ -26,6 +26,7 @@ export TEXMFHOME="~/.texmf" # personal tex packages
 export GEM_HOME="$HOME/.gems"
 #export NPM_CONFIG_PREFIX="$HOME/.npm_bins"
 export CHROME_BIN=`which chromium-browser` # used for running karma tests.
+export PYTHONSTARTUP="$HOME/.pythonrc"
 
 # PATH env var
 

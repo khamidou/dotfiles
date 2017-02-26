@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+# Display the current timestamp. Easier than Googling the right
+# incantation.
+import time
+
+print "utc: {}".format(int(time.time()))
