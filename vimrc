@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'garbas/vim-snipmate'
 Plugin 'danro/rename.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-scripts/YankRing.vim'
 
 " Syntax plugins
 Plugin 'scrooloose/syntastic'
@@ -35,6 +36,8 @@ let mapleader = "\<Space>"
 " idiotic vim has this distinction between leader and localleader
 let localleader = ","
 
+let g:ctrlp_map = '<c-o>'
+
 " shortcuts for fuzzyfilefinder
 map <Leader>b :FufBuffer<CR>
 map <Leader>f :FufFile<CR>
@@ -47,6 +50,7 @@ map <Leader>c 
 map <Leader>g 1
 map <Leader>g 1
 map <Leader>p :set paste! paste?<CR>
+map <Leader>t :CtrlPTag<CR>
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
