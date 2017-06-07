@@ -3,7 +3,9 @@
 
 # If there's no argument, simply look up the HEAD commit.
 if [ -z "$1" ]; then
+    git log -n 1 HEAD | cat
     git difftool "HEAD~1..HEAD"
 else
+    git log -n 1 $1 | cat
     git difftool "$1~1..$1"
 fi
