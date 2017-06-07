@@ -1,2 +1,9 @@
 #!/bin/sh
-git show --color $1 | less -r
+# Hack to display individual git commits in kaleidoscope.
+
+# If there's no argument, simply look up the HEAD commit.
+if [ -z "$1" ]; then
+    git difftool "HEAD~1..HEAD"
+else
+    git difftool "$1~1..$1"
+fi
