@@ -1,6 +1,5 @@
 vim/.netrwhist
 vim/.VimballRecord
-vim/bundle
 *.so
 *.o
 .zsh_history
