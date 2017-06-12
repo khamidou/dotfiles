@@ -30,10 +30,13 @@ def block_domains():
 
     with open('/etc/hosts', 'w+') as fd:
         for line in lines:
+            # If this isn't a comment, include it as is.
             if not line.startswith('#'):
                 fd.write(line)
             else:
-                if any(domain in line for domain in present_domains):
+                # If this is a comment, does it contain one of the domains
+                # we'd like to block? If yes, remove it.
+                if any(domain in line for domain in domains):
                     continue
                 else:
                     fd.write(line)
