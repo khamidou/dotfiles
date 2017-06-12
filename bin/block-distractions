@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+import sys
+
+BLOCKED_DOMAINS = [
+    "reddit.com",
+    "www.reddit.com",
+    "fr.reddit.com",
+    "de.reddit.com",
+    "news.ycombinator.com",
+    "twitter.com",
+    "mobile.twitter.com",
+    "facebook.com",
+    "www.facebook.com",
+]
+
+def block_domains():
+    lines = []
+    domains = {domain: False for domain in BLOCKED_DOMAINS}
+
+    with open('/etc/hosts', 'r') as fd:
+        lines = fd.readlines()
+
+    for line in lines:
+        for domain in domains:
+            if not line.startswith('#') and domain in line:
+                domains[domain] = True
+
+    absent_domains = {domain for domain in domains if domains[domain] is False}
+    present_domains = {domain for domain in domains if domains[domain] is True}
+
+    with open('/etc/hosts', 'w+') as fd:
+        for line in lines:
+            if not line.startswith('#'):
+                fd.write(line)
+            else:
+                if any(domain in line for domain in present_domains):
+                    continue
+                else:
+                    fd.write(line)
+
+        for domain in absent_domains:
+            fd.write("127.0.0.1 {}\n".format(domain))
+
+
+if __name__ == '__main__':
+    block_domains()
