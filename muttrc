@@ -9,10 +9,23 @@ set imap_check_subscribed
 # Reduce polling frequency to a sane level
 set mail_check=60
 
-# keep a cache of headers for faster loading (1.5.9+?)
-set header_cache=~/.hcache
+# Caches
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
 
 # Display download progress every 5K
 set net_inc=5
+
+set sort=reverse-threads
+set sort_aux=date-received
+
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+
+# Editor Information
+set editor=vim
 
 source ~/.mutt_accounts
