@@ -48,6 +48,11 @@ do
     fi
 done
 
+# setup rbenv
+if type "rbenv" > /dev/null; then
+  eval "$(rbenv init -)"
+fi
+
 # use bash-style C-w behaviour
 autoload -U select-word-style
 select-word-style bash
