@@ -1,0 +1,2 @@
+#!/bin/sh
+ack --type=python --ignore-file="match:/test/" --ignore-dir ".venv/" $@
