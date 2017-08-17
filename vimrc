@@ -107,7 +107,7 @@ set wildignore+=*/bower_components/*
 set wildignore+=*/dist/*
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
-set tags=./tags;/ " look for ctags recursively
+set tags=./tags;$HOME " look for ctags recursively
 
 "set colorcolumn=+1
 "hi ColorColumn guibg=#2e2e2e ctermbg=237
