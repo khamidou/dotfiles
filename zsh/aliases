@@ -72,4 +72,4 @@ if command_exists ack-grep ; then
     alias ack='ack-grep' # silly debian and its strange changes
 fi
 
-alias yack='ack --type=python --ignore-file="match:/test/"'
+alias yack='ack --type=python --ignore-file="match:/test/" --ignore-dir=.venv'
