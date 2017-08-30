@@ -1,2 +1,2 @@
 #!/bin/sh
-du -a $1 | sort -n -r | head -n 20
+du -ah $1 | sort -n -r | head -n 20
