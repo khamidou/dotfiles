@@ -1,0 +1,7 @@
+#!/bin/sh
+# a short script to remap right alt to right control on Sierra and later.
+# No need to use Karabiner just for that!
+hidutil property --set '{"UserKeyMapping":
+    [{"HIDKeyboardModifierMappingSrc":0x7000000e6,
+      "HIDKeyboardModifierMappingDst":0x7000000e4}]
+}'
