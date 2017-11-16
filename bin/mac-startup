@@ -1,0 +1,4 @@
+#!/bin/sh
+# a script to setup things when I login on MacOS.
+
+~/.bin/remap-right-alt-ctrl
