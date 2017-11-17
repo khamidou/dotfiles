@@ -35,10 +35,8 @@ PATHDIRS=(
     $HOME/.bin
     $NPM_CONFIG_PREFIX/bin
     /usr/local/go/bin
-    $HOME/softs/sbt/bin
-    $HOME/softs/scala-2.10.2/bin
     $HOME/travail/arcanist/arcanist/bin
-    $HOME/travail/password-vault/bin
+    $HOME/.rbenv/shims
 )
 
 for dir in $PATHDIRS
