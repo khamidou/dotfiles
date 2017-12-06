@@ -1,0 +1,8 @@
+[alias]
+  update = "!f() { git fetch -a && if [ $(git rev-parse --abbrev-ref HEAD) == $1 ]; then git reset --hard origin/$1; else git branch -f $1 origin/$1; fi; }; f"
+
+  update-all = "!f() { git fetch -a && if [ $(git rev-parse --abbrev-ref HEAD) == master ]; then git reset --hard origin/master; else git branch -f master origin/master; fi && if [ $(git rev-parse --abbrev-ref HEAD) == production ]; then git reset --hard origin/production; else git branch -f production origin/production; fi && if [ $(git rev-parse --abbrev-ref HEAD) == production-infra ]; then git reset --hard origin/production-infra; else git branch -f production-infra origin/production-infra; fi }; f"
+
+  lga = "! git log --color --graph --branches --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+  lg = "!git log --color --graph --branches --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
