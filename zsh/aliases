@@ -69,3 +69,4 @@ command_exists () {
 }
 
 alias yack='ack --type=python --ignore-file="match:/test/" --ignore-dir=.venv'
+alias tack='ack --type=python --ignore-dir=.venv'
