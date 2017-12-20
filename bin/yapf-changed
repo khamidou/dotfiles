@@ -1,0 +1,6 @@
+#!/bin/sh
+CHANGED_FILES=$(git diff --name-only origin/master)
+for path in $CHANGED_FILES
+do
+    yapf -i $path
+done
