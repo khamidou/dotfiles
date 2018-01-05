@@ -62,7 +62,6 @@ alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3'
 alias vg='vagrant'
 alias vu='vagrant up'
 alias vs='vagrant ssh'
-alias gentags='ctags -R --exclude=".git" --exclude=".venv" --exclude="node_modules" --exclude="*.min.js" .'
 
 command_exists () {
         type "$1" &> /dev/null ;
