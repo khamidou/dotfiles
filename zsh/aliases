@@ -23,13 +23,17 @@ alias mdir='mkdir -p'  # This alias supersedes mtool's mdir but who uses msdos ?
 # git aliases
 alias gl='git log --color'
 alias co='git checkout'
-alias br='git branch'
+alias br='git branch --color | grep -v "prod" | grep -v "staging"'
 alias ch='git cherry-pick'
 alias cm='git commit'
 alias st='git status'
 alias pu='git push'
 alias gd='git difftool'
 alias gds='git difftool -y -x "icdiff" --staged | less'
+
+# nylas git aliases
+alias grhm='git reset --hard master'
+alias gppi='git push --force origin production-infra'
 
 # arcanist
 alias arcd='stty sane ; arc diff --preview'
