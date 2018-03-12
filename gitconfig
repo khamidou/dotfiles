@@ -1,3 +1,7 @@
+[user]
+	email = khamidou@gmail.com
+	name = Karim Hamidou
+
 [alias]
 	lga = "! git log --color --graph --branches --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
  	lg = "!git log --color --graph --branches --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
