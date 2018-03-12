@@ -13,6 +13,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'danro/rename.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/YankRing.vim'
+Plugin 'vim-scripts/L9'
 
 " Syntax plugins
 Plugin 'scrooloose/syntastic'
@@ -104,6 +105,8 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*.swp,*.bak,*~,._*
 set wildignore+=*/node_modules/*
 set wildignore+=*/bower_components/*
+set wildignore+=*/.venv/*
+set wildignore+=*/venv/*
 set wildignore+=*/dist/*
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
@@ -128,4 +131,4 @@ let g:syntastic_javascript_checkers = ['eslint', 'jshint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-let g:syntastic_python_checkers = ['python', 'pyflakes', 'pep8']
+let g:syntastic_python_checkers = ['python', 'flake8']

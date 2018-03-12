@@ -45,7 +45,7 @@ alias lint='splint' # I keep confusing splint and split
 
 alias spindent='indent -bad -bap -nsob -cdb -sc -br -cdw -cli3 -npcs -cs -nbc -brs -bbo '
 
-alias pig='ping google.com'
+alias pig='ping -a google.com'
 
 # Commodity aliases for apt-get :
 alias apts='apt-cache search'
