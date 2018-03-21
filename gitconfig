@@ -8,3 +8,19 @@
 	update = "!f() { git fetch -a && if [ $(git rev-parse --abbrev-ref HEAD) == $1 ]; then git reset --hard origin/$1; else git branch -f $1 origin/$1; fi; }; f"
  	showtool = "!showci () { rev=${1:-HEAD}; git difftool $rev~1 $rev;  }; showci $1"
  	diff-log = "!f() { git log --oneline --format='%h %an %ar %s' $1; }; f"
+
+[diff]
+    tool = Kaleidoscope
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+	prompt = false
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+
+[merge]
+	tool = Kaleidoscope
