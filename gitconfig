@@ -8,6 +8,7 @@
 	update = "!f() { git fetch -a && if [ $(git rev-parse --abbrev-ref HEAD) == $1 ]; then git reset --hard origin/$1; else git branch -f $1 origin/$1; fi; }; f"
  	showtool = "!showci () { rev=${1:-HEAD}; git difftool $rev~1 $rev;  }; showci $1"
  	diff-log = "!f() { git log --oneline --format='%h %an %ar %s' $1; }; f"
+    update-all = "!f() { git fetch -a && if [ $(git rev-parse --abbrev-ref HEAD) == master ]; then git reset --hard origin/master; else git branch -f master origin/master; fi && if [ $(git rev-parse --abbrev-ref HEAD) == production ]; then git reset --hard origin/production; else git branch -f production origin/production; fi && if [ $(git rev-parse --abbrev-ref HEAD) == production-infra ]; then git reset --hard origin/production-infra; else git branch -f production-infra origin/production-infra; fi }; f"
 
 [diff]
     tool = Kaleidoscope

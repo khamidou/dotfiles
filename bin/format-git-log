@@ -1,2 +1,2 @@
 #!/bin/bash
-git log --pretty=format:"%h%x09%an%x09%x09%s"
+git log --pretty=format:"%h%x09%an%x09%x09%s" $1
