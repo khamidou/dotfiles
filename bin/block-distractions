@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 import os
-import sys
-import time
 
 
 BLOCKED_DOMAINS = [
@@ -17,14 +15,6 @@ BLOCKED_DOMAINS = [
 ]
 
 def block_domains():
-    current_time = time.time()
-    last_modified = os.path.getmtime('/etc/hosts')
-
-    if current_time - last_modified > 60:
-        # Don't update files when we don't need to.
-        print('Skipping update since the file wasn''t updated')
-        return
-
     lines = []
     domains = {domain: False for domain in BLOCKED_DOMAINS}
 
@@ -38,6 +28,11 @@ def block_domains():
 
     absent_domains = {domain for domain in domains if domains[domain] is False}
     present_domains = {domain for domain in domains if domains[domain] is True}
+
+    if len(absent_domains) == 0 and len(present_domains) == len(BLOCKED_DOMAINS):
+        # Don't update the file when we don't need to.
+        print('Skipping update since the file wasn''t updated')
+        return
 
     with open('/etc/hosts', 'w+') as fd:
         for line in lines:
