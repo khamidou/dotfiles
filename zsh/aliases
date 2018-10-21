@@ -71,5 +71,5 @@ command_exists () {
         type "$1" &> /dev/null ;
 }
 
-alias yack='ack --type=python --ignore-file="match:/test/" --ignore-dir=.venv'
-alias tack='ack --type=python --ignore-dir=.venv'
+alias yack='ack -C 4 --type=python --ignore-file="match:/test/" --ignore-dir=.venv'
+alias tack='ack -C 4 --type=python --ignore-dir=.venv'
