@@ -4,4 +4,4 @@
 hidutil property --set '{"UserKeyMapping":
     [{"HIDKeyboardModifierMappingSrc":0x7000000e6,
       "HIDKeyboardModifierMappingDst":0x7000000e4}]
-}'
+}' >/dev/null 2>&1
