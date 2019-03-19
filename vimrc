@@ -38,10 +38,12 @@ let localleader = ","
 
 let g:ctrlp_map = '<c-o>'
 let g:ctrlp_max_files = 15000
+let g:ctrlp_match_window = 'results:40'
 
 " shortcuts for fuzzyfilefinder
-map <Leader>b :CtrlPBuffer<CR>
-map <Leader>f :CtrlP<CR>
+set wildcharm=<C-z>
+map <Leader>b :FufBuffer<CR>
+map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
 map <Leader>r :FufRenewCache<CR>
@@ -66,6 +68,10 @@ highlight Pmenu guibg=black
 filetype plugin on
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<Leader>s"
+
+let g:fuf_maxMenuWidth = 100
+" Don't require me to type '/' to match subpaths
+let g:fuf_splitPathMatching = 0
 
 " Tab completion options
 " (only complete to the longest unambiguous match, and show a menu)
