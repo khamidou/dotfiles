@@ -1,2 +1,0 @@
-#!/bin/sh
-du -a /home/karim | sort -n -r | head -n 40

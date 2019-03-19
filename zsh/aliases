@@ -38,6 +38,7 @@ alias gppi='git push --force origin production-infra'
 # arcanist
 alias arcd='stty sane ; arc diff --preview'
 alias arh='arcd HEAD~1'
+alias feat='arc feature'
 
 alias pk='pkill'
 
