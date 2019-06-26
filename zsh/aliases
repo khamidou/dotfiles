@@ -36,30 +36,15 @@ alias grhm='git reset --hard master'
 alias gppi='git push --force origin production-infra'
 
 # arcanist
-alias arcd='stty sane ; arc diff --preview'
+alias arcd='arc diff'
 alias arh='arcd HEAD~1'
 alias feat='arc feature'
 
 alias pk='pkill'
 
-alias lint='splint' # I keep confusing splint and split
-
-alias spindent='indent -bad -bap -nsob -cdb -sc -br -cdw -cli3 -npcs -cs -nbc -brs -bbo '
-
 alias pig='ping -a google.com'
 
-# Commodity aliases for apt-get :
-alias apts='apt-cache search'
-alias apti='sudo apt-get install'
-alias aptr='sudo apt-get remove'
-
 alias py='python'
-
-# start firefox and display the profile manager
-alias ffo='firefox -no-remote -P'
-
-# redshift, with hardcoded paris location
-alias reds='redshift -l 33:-96'
 
 # download an mp3 from youtube
 alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3'
@@ -67,10 +52,6 @@ alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3'
 alias vg='vagrant'
 alias vu='vagrant up'
 alias vs='vagrant ssh'
-
-command_exists () {
-        type "$1" &> /dev/null ;
-}
 
 alias yack='ack -C 4 --type=python --ignore-file="match:/test/" --ignore-dir=.venv'
 alias tack='ack -C 4 --type=python --ignore-dir=.venv'
