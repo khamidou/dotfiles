@@ -1,2 +1,0 @@
-#!/bin/sh
-aconnect 24:0 14:0
