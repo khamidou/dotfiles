@@ -1,0 +1,2 @@
+#!/bin/sh
+open -n -a "Google Chrome" --args --profile-directory=Fairlane

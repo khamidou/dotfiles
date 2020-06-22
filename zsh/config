@@ -1,18 +1,4 @@
 #!/usr/bin/env zsh
-
-case `uname` in
-  Darwin)
-    . $HOME/.zsh/darwin.sh
-    ;;
-  Linux)
-    . $HOME/.zsh/linux.sh
-    ;;
-esac
-
-if [[ -a $HOME/.zsh/local.sh ]]; then
-    . $HOME/.zsh/local.sh
-fi
-
 # Disable Ctrl-S to suspend tasks.
 # It makes it possible to forward search history instead.
 stty -ixon
@@ -46,11 +32,6 @@ do
     fi
 done
 
-# setup rbenv
-if type "rbenv" > /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
 # use bash-style C-w behaviour
 autoload -U select-word-style
 select-word-style bash
@@ -76,47 +57,24 @@ setopt COMPLETE_IN_WORD
 
 setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
-# setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
+setopt HIST_IGNORE_ALL_DUPS  # do not record dupes in history
 setopt HIST_REDUCE_BLANKS
 
 # use a decent prompt
 autoload -U promptinit && promptinit
 prompt suse
 
-unamestr=`uname`
-if [ "$unamestr" = 'Darwin' ]; then
-    chpwd () {print -Pn "\e]2; %~/ \a"}
-fi
-
 bindkey -e # Emacs keybindings
-#zle -N newtab
-#bindkey '^[^[[D' backward-word
-#bindkey '^[^[[C' forward-word
-#bindkey '^[[5D' beginning-of-line
-#bindkey '^[[5C' end-of-line
-#bindkey '^[[3~' delete-char
-#bindkey '^[^N' newtab
-#bindkey '^?' backward-delete-char 
 
-function act() {
-    FILE=$(findact)
-    if [ $? -eq 0 ]; then
-        echo -n "Source $FILE (y/n) ? "
-        read  yn
-        case $yn in
-        [Yy]* ) source $FILE;
-        esac
-    fi
-}
+case `uname` in
+  Darwin)
+    . $HOME/.zsh/darwin.sh
+    ;;
+  Linux)
+    . $HOME/.zsh/linux.sh
+    ;;
+esac
 
-function silent_act() {
-    yes | act
-}
-
-function runs {
-    source `findact` # activate virtualenv
-    MNPY=$(findact manage.py)
-
-    cd `dirname $MNPY`
-    python $MNPY runserver
-}
+if [[ -a $HOME/.zsh/local.sh ]]; then
+    . $HOME/.zsh/local.sh
+fi

@@ -1,0 +1,10 @@
+act() {
+    FILE=$(findact)
+    if [ $? -eq 0 ]; then
+        echo -n "Source $FILE (y/n) ? "
+        read  yn
+        case $yn in
+        [Yy]* ) source $FILE;
+        esac
+    fi
+}
