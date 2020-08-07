@@ -61,8 +61,7 @@ setopt HIST_IGNORE_ALL_DUPS  # do not record dupes in history
 setopt HIST_REDUCE_BLANKS
 
 # use a decent prompt
-autoload -U promptinit && promptinit
-prompt suse
+PROMPT="%n@%m:%~/$ "
 
 bindkey -e # Emacs keybindings
 
