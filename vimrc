@@ -14,6 +14,7 @@ Plugin 'danro/rename.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/YankRing.vim'
 Plugin 'vim-scripts/L9'
+Plugin 'vim-scripts/FuzzyFinder'
 
 " Syntax plugins
 Plugin 'scrooloose/syntastic'
