@@ -8,18 +8,17 @@ filetype off                  " required
 set rtp+=~/.vim/Vundle.vim
 call vundle#begin()
 
-Plugin 'tpope/vim-fugitive@a9100fafb8'
-Plugin 'garbas/vim-snipmate'
-Plugin 'danro/rename.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-scripts/YankRing.vim'
-Plugin 'vim-scripts/L9'
-Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'tpope/vim-fugitive@a9100f'
+Plugin 'garbas/vim-snipmate@a9802f2'
+Plugin 'danro/rename.vim@f133763'
+Plugin 'ctrlpvim/ctrlp.vim@ebc568c'
+Plugin 'vim-scripts/YankRing.vim@28854ab'
+Plugin 'vim-scripts/L9@c822b05'
+Plugin 'vim-scripts/FuzzyFinder@b9f1659'
 
 " Syntax plugins
-Plugin 'scrooloose/syntastic'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'scrooloose/syntastic@0295d824'
+Plugin 'pangloss/vim-javascript@dd84369'
 
 call vundle#end()            " required
 
