@@ -8,7 +8,7 @@ filetype off                  " required
 set rtp+=~/.vim/Vundle.vim
 call vundle#begin()
 
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive@a9100fafb8'
 Plugin 'garbas/vim-snipmate'
 Plugin 'danro/rename.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
