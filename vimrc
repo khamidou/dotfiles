@@ -5,22 +5,21 @@
 set nocompatible
 filetype off                  " required
 
-set rtp+=~/.vim/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'tpope/vim-fugitive@a9100f'
-Plugin 'garbas/vim-snipmate@a9802f2'
-Plugin 'danro/rename.vim@f133763'
-Plugin 'ctrlpvim/ctrlp.vim@ebc568c'
-Plugin 'vim-scripts/YankRing.vim@28854ab'
-Plugin 'vim-scripts/L9@c822b05'
-Plugin 'vim-scripts/FuzzyFinder@b9f1659'
+Plug 'tpope/vim-fugitive', {'commit': 'a9100f'}
+Plug 'garbas/vim-snipmate', {'commit': 'a9802f2'}
+Plug 'danro/rename.vim', {'commit': 'f133763'}
+Plug 'ctrlpvim/ctrlp.vim', {'commit': 'ebc568c'}
+Plug 'vim-scripts/YankRing.vim', {'commit': '28854ab'}
+Plug 'vim-scripts/L9', {'commit': 'c822b05'}
+Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
 
 " Syntax plugins
-Plugin 'scrooloose/syntastic@0295d824'
-Plugin 'pangloss/vim-javascript@dd84369'
+Plug 'scrooloose/syntastic', {'commit': '0295d824'}
+Plug 'pangloss/vim-javascript', {'commit': 'dd84369'}
 
-call vundle#end()            " required
+call plug#end()            " required
 
 syntax on
 
