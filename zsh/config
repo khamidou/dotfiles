@@ -23,6 +23,7 @@ PATHDIRS=(
     /usr/local/go/bin
     $HOME/travail/arcanist/arcanist/bin
     $HOME/.rbenv/shims
+    /opt/homebrew/bin
 )
 
 for dir in $PATHDIRS
