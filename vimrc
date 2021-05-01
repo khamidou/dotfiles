@@ -18,6 +18,7 @@ Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
 " Syntax plugins
 Plug 'scrooloose/syntastic', {'commit': '0295d824'}
 Plug 'pangloss/vim-javascript', {'commit': 'dd84369'}
+Plug 'evanleck/vim-svelte', {'commit': '75f6f53'}
 
 call plug#end()            " required
 
