@@ -25,5 +25,6 @@
 
 [merge]
 	tool = Kaleidoscope
+
 [pull]
 	rebase = true
