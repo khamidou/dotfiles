@@ -125,6 +125,9 @@ set tags=./tags;$HOME " look for ctags recursively
 " Abbrevs
 cnoreabbrev te tabedit
 
+" I keep typing it wrong
+cabbrev aq qa
+
 if executable('ack')
   " Use ack over grep
   set grepprg=ack\ --nogroup\ --nocolor
