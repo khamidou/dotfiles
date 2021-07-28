@@ -31,6 +31,7 @@ set ruler		" show the cursor position all the time
 set incsearch		" do incremental searching
 set hlsearch
 set nofoldenable " never liked folding
+"set re=0 " turn on new regex engine because typescript render is sloooow https://jameschambers.co.uk/vim-typescript-slow
 
 let mapleader = "\<Space>"
 " idiotic vim has this distinction between leader and localleader
@@ -101,9 +102,6 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.es6 set ft=javascript
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
-" Display .go files as Golang
-autocmd BufNewFile,BufRead *.go set ft=go
-
 " file finding options
 set wildmenu
 set wildmode=longest:full,full
@@ -153,3 +151,12 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 highlight SyntasticWarningSign ctermfg=white ctermbg=red
+
+
+" Golang
+
+" Display .go files as Golang
+autocmd BufNewFile,BufRead *.go set ft=go
+
+" format the current buffer with goimports
+command GoImports %! goimports
