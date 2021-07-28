@@ -1,2 +1,2 @@
 #!/bin/sh
-ctags --exclude=".git" --exclude=".venv" --exclude="node_modules/" --exclude="*.js" --exclude='*.sql' --exclude=".git" -R .
+ctags --exclude=".git" --exclude=".venv" --exclude="node_modules/*" --exclude='*.sql' --exclude=".git" -R .
