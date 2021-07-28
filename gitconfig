@@ -1,3 +1,6 @@
+[core]
+    excludesfile = ~/.gitignore
+
 [user]
 	email = khamidou@gmail.com
 	name = Karim Hamidou
@@ -10,23 +13,8 @@
  	diff-log = "!f() { git log --oneline --format='%h %an %ar %s' $1; }; f"
     update-all = "!f() { git fetch -a && if [ $(git rev-parse --abbrev-ref HEAD) == master ]; then git reset --hard origin/master; else git branch -f master origin/master; fi && if [ $(git rev-parse --abbrev-ref HEAD) == production ]; then git reset --hard origin/production; else git branch -f production origin/production; fi && if [ $(git rev-parse --abbrev-ref HEAD) == production-infra ]; then git reset --hard origin/production-infra; else git branch -f production-infra origin/production-infra; fi }; f"
 
-[diff]
-    tool = Kaleidoscope
-
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-
-[difftool]
-	prompt = false
-
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
-
-[merge]
-	tool = Kaleidoscope
-
 [pull]
 	rebase = true
+
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/

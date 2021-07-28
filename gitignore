@@ -5,3 +5,5 @@
 *.swp
 fluxbox/fbrun_history
 *.o
+tags
+TAGS
