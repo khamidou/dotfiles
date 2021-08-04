@@ -102,6 +102,9 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.es6 set ft=javascript
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
+" Use hcl syntax for terraform
+autocmd BufNewFile,BufRead *.tf set ft=hcl
+
 " file finding options
 set wildmenu
 set wildmode=longest:full,full
