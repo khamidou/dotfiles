@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require "readline"
+
+res = `gh pr list -A khamidou -s merged | awk -Ft  '{ print $3 }'`.split("\n")
+
+if !$?.success? then
+  abort("Error when running command. Do you have the github CLI installed?")
+end
+
+puts "Going to delete the following already merged branches, ok?"
+res.each { |branch| puts branch }
+
+Readline.readline("> ", true)
+
+res.each { |branch| `git branch -D #{branch}` }
