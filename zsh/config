@@ -61,8 +61,16 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # do not record dupes in history
 setopt HIST_REDUCE_BLANKS
 
+autoload -Uz vcs_info
+zstyle ':vcs_info:git*' formats "(%b)"
+vcs_precmd() { vcs_info }
+
+# We might have multiple precmds
+[[ -z $precmd_functions ]] && precmd_functions=()
+precmd_functions=($precmd_functions vcs_precmd)
+
 # use a decent prompt
-PROMPT="%n@%m:%~/$ "
+PROMPT='%n@%m:%~/${vcs_info_msg_0_}$ '
 
 bindkey -e # Emacs keybindings
 
