@@ -20,3 +20,5 @@
 	insteadOf = https://github.com/
 [push]
 	default = current
+[pager]
+	branch = false
