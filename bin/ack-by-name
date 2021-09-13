@@ -1,0 +1,3 @@
+#!/bin/sh
+# usage: ack-by-name file_pattern text_pattern
+find-by-name $1 | ack -x $2
