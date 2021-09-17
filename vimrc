@@ -14,9 +14,10 @@ Plug 'ctrlpvim/ctrlp.vim', {'commit': 'ebc568c'}
 Plug 'vim-scripts/YankRing.vim', {'commit': '28854ab'}
 Plug 'vim-scripts/L9', {'commit': 'c822b05'}
 Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
+Plug 'fatih/vim-go', {'commit': 'f3ebf20', 'do': ':GoUpdateBinaries'}
 
 " Syntax plugins
-Plug 'scrooloose/syntastic', {'commit': '0295d824'}
+"Plug 'scrooloose/syntastic', {'commit': '0295d824'}
 Plug 'pangloss/vim-javascript', {'commit': 'dd84369'}
 Plug 'evanleck/vim-svelte', {'commit': '75f6f53'}
 
@@ -135,14 +136,14 @@ if executable('ack')
 endif
 
 " Syntastic
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_jump=0
-let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-let g:syntastic_javascript_checkers = ['eslint', 'jshint']
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
-let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-let g:syntastic_python_checkers = ['python', 'flake8']
+"let g:syntastic_enable_signs=1
+"let g:syntastic_auto_jump=0
+"let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+"let g:syntastic_javascript_checkers = ['eslint', 'jshint']
+"let g:syntastic_javascript_eslint_exec = 'eslint_d'
+"let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
+"let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+"let g:syntastic_python_checkers = ['python', 'flake8']
 
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 0
@@ -150,7 +151,7 @@ let g:syntastic_python_checkers = ['python', 'flake8']
 "let g:syntastic_check_on_wq = 0
 "
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 highlight SyntasticWarningSign ctermfg=white ctermbg=red
