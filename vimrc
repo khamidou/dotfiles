@@ -103,6 +103,9 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.es6 set ft=javascript
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
+" Default to Django syntax for html files.
+autocmd BufNewFile,BufRead *.html set filetype=htmldjango
+
 " Use hcl syntax for terraform
 autocmd BufNewFile,BufRead *.tf set ft=hcl
 
