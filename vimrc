@@ -96,6 +96,7 @@ set modeline
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
 " Display JSON files as Javascript
@@ -105,6 +106,9 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 " Default to Django syntax for html files.
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
+
+" Display .go files as Golang
+autocmd BufNewFile,BufRead *.go set ft=go
 
 " Use hcl syntax for terraform
 autocmd BufNewFile,BufRead *.tf set ft=hcl
@@ -161,9 +165,5 @@ highlight SyntasticWarningSign ctermfg=white ctermbg=red
 
 
 " Golang
-
-" Display .go files as Golang
-autocmd BufNewFile,BufRead *.go set ft=go
-
 " format the current buffer with goimports
 command GoImports %! goimports
