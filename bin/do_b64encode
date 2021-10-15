@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+# Decode base64 data from stdin
+
+import sys
+import base64
+
+data = sys.stdin.read()
+print base64.b64encode(data)
