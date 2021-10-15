@@ -1,2 +1,6 @@
 #!/bin/bash
-pbpaste | do_b64decode
+if [ $# -eq 0 ]; then
+    pbpaste | do_b64decode
+else
+    echo -n $1 | do_b64decode
+fi;
