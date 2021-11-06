@@ -28,7 +28,7 @@ alias ch='git cherry-pick'
 alias cm='git commit'
 alias st='git status'
 alias pu='git push'
-alias gd='git difftool'
+alias gd='git diff'
 alias gds='git difftool -y -x "icdiff" --staged | less'
 
 # arcanist
