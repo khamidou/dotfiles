@@ -3,7 +3,6 @@
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
-filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
 
@@ -17,9 +16,10 @@ Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
 Plug 'fatih/vim-go', {'commit': 'f3ebf20', 'do': ':GoUpdateBinaries'}
 
 " Syntax plugins
-"Plug 'scrooloose/syntastic', {'commit': '0295d824'}
-Plug 'pangloss/vim-javascript', {'commit': 'dd84369'}
-Plug 'evanleck/vim-svelte', {'commit': '75f6f53'}
+Plug 'scrooloose/syntastic', {'commit': '0295d824'}
+Plug 'pangloss/vim-javascript', {'commit': 'd6e1375'}
+"Plug 'leafgarland/typescript-vim', {'commit': '67e81e4'}
+"Plug 'peitalin/vim-jsx-typescript', {'commit': '22df470'}
 
 call plug#end()            " required
 
@@ -102,7 +102,6 @@ autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 " Display JSON files as Javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.es6 set ft=javascript
-autocmd BufNewFile,BufRead *.ts set ft=javascript
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 " Default to Django syntax for html files.
