@@ -6,10 +6,6 @@ alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
-if [ $IS_MAC ]; then
-    alias ls='ls -G'
-fi
-
 # Some utility aliases
 alias m='make'
 alias emacs='emacs -nw'
