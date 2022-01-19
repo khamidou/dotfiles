@@ -14,11 +14,8 @@ fi
 alias m='make'
 alias emacs='emacs -nw'
 alias l='less'
-alias n='mc'
 alias sl='ls'
 alias telnel='telnet'  # This one is particularly annoying.
-alias cls='clear'
-alias mdir='mkdir -p'  # This alias supersedes mtool's mdir but who uses msdos ?
 
 # git aliases
 alias gl='git log --color'
@@ -29,21 +26,11 @@ alias cm='git commit'
 alias st='git status'
 alias pu='git push'
 alias gd='git diff'
-alias gds='git difftool -y -x "icdiff" --staged | less'
-
-# arcanist
-alias arcd='arc diff'
-alias arh='arcd HEAD~1'
-alias feat='arc feature'
+alias gds='git difftool -y -x "icdiff"'
 
 alias pk='pkill'
 
 alias pig='ping -a 8.8.8.8'
-
-alias py='python'
-
-# download an mp3 from youtube
-alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3'
 
 alias vg='vagrant'
 alias vu='vagrant up'
