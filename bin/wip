@@ -1,3 +1,5 @@
 #!/bin/sh
 # add changes and create a WIP commit.
-git add -u && git commit -m 'WIP'
+DEFAULT_MESSAGE="wip"
+COMMIT_MESSAGE=${1:-$DEFAULT_MESSAGE}
+git add -u && git commit -m "$COMMIT_MESSAGE"
