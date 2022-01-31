@@ -43,7 +43,7 @@ let g:ctrlp_match_window = 'results:40'
 
 " shortcuts for fuzzyfilefinder
 set wildcharm=<C-z>
-map <Leader>b :FufBuffer<CR>
+map <Leader>b :CtrlPBuffer<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
