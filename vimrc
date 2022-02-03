@@ -13,6 +13,8 @@ Plug 'ctrlpvim/ctrlp.vim', {'commit': 'ebc568c'}
 Plug 'vim-scripts/YankRing.vim', {'commit': '28854ab'}
 Plug 'vim-scripts/L9', {'commit': 'c822b05'}
 Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
+Plug 'mileszs/ack.vim', {'commit': '36e40f9'}
+
 Plug 'fatih/vim-go', {'commit': 'f3ebf20', 'do': ':GoUpdateBinaries'}
 
 " Syntax plugins
@@ -31,6 +33,7 @@ set ruler		" show the cursor position all the time
 set incsearch		" do incremental searching
 set hlsearch
 set nofoldenable " never liked folding
+set backspace=indent,eol,start
 "set re=0 " turn on new regex engine because typescript render is sloooow https://jameschambers.co.uk/vim-typescript-slow
 
 let mapleader = "\<Space>"
@@ -88,7 +91,7 @@ set hidden " work like emacs for buffers
 
 set smarttab
 set autochdir
-set switchbuf=usetab,newtab
+set switchbuf=useopen
 set modeline
 
 " always use four spaces
