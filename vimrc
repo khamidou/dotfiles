@@ -47,6 +47,7 @@ let g:ctrlp_match_window = 'results:40'
 " shortcuts for fuzzyfilefinder
 set wildcharm=<C-z>
 map <Leader>b :CtrlPBuffer<CR>
+map <Leader>l :CtrlPLine<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>w :w<CR>
 map <Leader>d :bd<CR>
@@ -61,6 +62,13 @@ map <Leader>t :CtrlPTag<CR>
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
+
+" Remap a key sequence in insert mode to kick me out to normal
+" mode. This makes it so this key sequence can never be typed
+" again in insert mode, so it has to be unique.
+" From https://github.com/mitchellh/vim-misc/blob/1205bd43e9b692d253572eddaf784977ae46f35b/vimrc.vim#L95
+inoremap jj <esc>
+inoremap jJ <esc>
 
 " Color scheme it's a custom one copied from desert
 colorscheme cscheme
