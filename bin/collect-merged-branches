@@ -18,4 +18,4 @@ local_branches.each { |branch| puts branch }
 
 Readline.readline("> ", true)
 
-res.each { |branch| `git branch -D #{branch}` }
+local_branches.each { |branch| `git branch -D #{branch}` }
