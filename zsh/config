@@ -24,6 +24,7 @@ PATHDIRS=(
     $HOME/travail/arcanist/arcanist/bin
     $HOME/.rbenv/shims
     /opt/homebrew/bin
+    /opt/homebrew/opt/ruby/bin
 )
 
 for dir in $PATHDIRS

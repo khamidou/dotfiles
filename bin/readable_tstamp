@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 import datetime
 
-print "local: %s" % datetime.datetime.fromtimestamp(int(sys.argv[1]))
-print "utc:   %s" % datetime.datetime.utcfromtimestamp(int(sys.argv[1]))
+print("local: %s" % datetime.datetime.fromtimestamp(int(sys.argv[1])))
+print("utc:   %s" % datetime.datetime.utcfromtimestamp(int(sys.argv[1])))
