@@ -1,3 +1,5 @@
 #!/bin/sh
 # usage: ack-by-name file_pattern text_pattern
-find-by-name $1 | ack -x $2
+name_format=$1
+shift
+find-by-name $name_format | ack -x "$*"
