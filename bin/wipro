@@ -1,3 +1,3 @@
 #!/bin/sh
 # wip + also push
-wip "${@:1}" && pu
+wip "${@:1}" && git push
