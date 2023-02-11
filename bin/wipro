@@ -1,0 +1,3 @@
+#!/bin/sh
+# wip + also push
+wip "${@:1}" && pu
