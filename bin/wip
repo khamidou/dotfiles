@@ -2,4 +2,4 @@
 # add changes and create a WIP commit.
 DEFAULT_MESSAGE="wip"
 COMMIT_MESSAGE=${1:-$DEFAULT_MESSAGE}
-git add -u && git commit -m "$COMMIT_MESSAGE"
+git add -u && git commit -m "$COMMIT_MESSAGE" "${@:2}"
