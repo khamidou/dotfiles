@@ -4,4 +4,4 @@ import sys
 import base64
 
 data = sys.stdin.read()
-sys.stdout.write(base64.b64decode(data))
+sys.stdout.write(base64.b64decode(data).decode('ascii'))
