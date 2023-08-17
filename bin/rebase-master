@@ -1,2 +1,2 @@
 #!/bin/sh
-git rebase origin/master
+git fetch && git rebase origin/master
