@@ -8,6 +8,6 @@ fi
 
 # kind of complicated but basically we're getting the commit as the first argument,
 # then getting the contents of the commit message and grepping for a string like (#133)
-PR_NUM=`git log --format=%B -n 1 $1 | perl -lne 'print \$1 if /\(#([0-9]{1,})\)/'`
+PR_NUM=`git log --format=%B -n 1 $1 | perl -lne 'print \$1 if /\(#([0-9]{1,})\)/' | head -n 1`
 
 gh pr view --web $PR_NUM
