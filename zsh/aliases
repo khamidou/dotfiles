@@ -40,3 +40,5 @@ alias tsack='ack -C 4 --ignore-dir=dist'
 alias gack='ack -C 4 --type=go --ignore-dir=vendor'
 
 alias chmox='chmod +x'
+
+alias git-toplevel='cd `git rev-parse --show-toplevel`'
