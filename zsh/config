@@ -62,6 +62,11 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # do not record dupes in history
 setopt HIST_REDUCE_BLANKS
 
+# enable partial folder completion so /h/k/d gets completed to /home/karim/documents
+autoload -U compinit && compinit
+zmodload zsh/complist
+
+# show branch info
 autoload -Uz vcs_info
 zstyle ':vcs_info:git*' formats "(%b)"
 vcs_precmd() { vcs_info }
