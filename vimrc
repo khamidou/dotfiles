@@ -43,6 +43,8 @@ let localleader = ","
 let g:ctrlp_map = '<c-o>'
 let g:ctrlp_max_files = 15000
 let g:ctrlp_match_window = 'results:40'
+let g:ctrlp_show_hidden=1
+let g:ctrlp_custom_ignore = 'node_modules\|\.DS_Store\|\.git|(\.(swp|swo))'
 
 " shortcuts for fuzzyfilefinder
 set wildcharm=<C-z>
