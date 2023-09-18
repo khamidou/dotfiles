@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # setup the dotfiles
 
 import sys
@@ -31,7 +31,7 @@ for dentry in entries:
     else:
         linkpath = os.path.join(destdir, "." + dentry)
     if not os.path.exists(linkpath):
-        str ="ln -s %s %s" % (os.path.realpath(dentry), linkpath)
-        print str
-        os.system(str)
+        s = f"ln -s {os.path.realpath(dentry)} {linkpath}"
+        print(s)
+        os.system(s)
 
