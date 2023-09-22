@@ -5,6 +5,8 @@ snippet encoding
 snippet monly
 	import pytest
 	@pytest.mark.only
+snippet ppr
+	import pprint; pp = pprint.PrettyPrinter(indent=4); pp.pprint(${1:variable})
 snippet pdb
 	import pdb ; pdb.set_trace()
 snippet rdb
