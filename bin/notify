@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+osascript -e "display notification \"$1\" with title \"Terminal Notification\""
