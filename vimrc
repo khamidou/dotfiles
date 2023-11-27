@@ -46,6 +46,8 @@ let g:ctrlp_match_window = 'results:40'
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore = 'node_modules\|\.DS_Store\|\.git|(\.(swp|swo))'
 
+let g:fuf_enumeratingLimit=500
+
 " shortcuts for fuzzyfilefinder
 set wildcharm=<C-z>
 map <Leader>b :CtrlPBuffer<CR>
