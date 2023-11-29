@@ -7,6 +7,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive', {'commit': 'a9100f'}
+Plug 'tpope/vim-rhubarb', {'commit': 'ee69335'}
 Plug 'garbas/vim-snipmate', {'commit': 'a9802f2'}
 Plug 'danro/rename.vim', {'commit': 'f133763'}
 Plug 'ctrlpvim/ctrlp.vim', {'commit': 'ebc568c'}
