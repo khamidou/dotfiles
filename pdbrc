@@ -7,7 +7,10 @@ from contextlib import suppress
 with suppress(ImportError): import gnureadline
 with suppress(ImportError): import readline
 
-import rlcompleter
-pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
+with suppress(NameError): gnureadline.parse_and_bind('tab: complete')
+with suppress(NameError): readline.parse_and_bind('tab: complete')
 
-readline.parse_and_bind('tab: complete')
+import rlcompleter
+pdb_completer = rlcompleter.Completer(locals()).complete
+pdb.Pdb.complete = pdb_completer
+with suppress(NameError): gnureadline.set_completer(pdb_completer)
