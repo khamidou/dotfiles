@@ -9,3 +9,5 @@ with suppress(ImportError): import readline
 
 import rlcompleter
 pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
+
+readline.parse_and_bind('tab: complete')
