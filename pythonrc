@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 import os
 import atexit
-import rlcompleter
-import readline
+
+try:
+    import gnureadline
+except ImportError:
+    import readline
+
 import rlcompleter
 
 if 'libedit' in readline.__doc__:
