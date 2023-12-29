@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require "readline"
 
-res = `gh pr list --author @me -s merged | awk -Ft  '{ print $3 }'`.split("\n")
+res = `gh pr list --author @me --state merged --state closed | awk -Ft  '{ print $3 }'`.split("\n")
 
 if !$?.success? then
   abort("Error when running command. Do you have the github CLI installed?")
@@ -13,7 +13,7 @@ if local_branches == []
   exit(0)
 end
 
-puts "Going to delete the following already merged branches, ok?"
+puts "Going to delete the following already merged/closed branches, ok?"
 local_branches.each { |branch| puts branch }
 
 Readline.readline("> ", true)
