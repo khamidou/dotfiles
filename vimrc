@@ -15,6 +15,7 @@ Plug 'vim-scripts/YankRing.vim', {'commit': '28854ab'}
 Plug 'vim-scripts/L9', {'commit': 'c822b05'}
 Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
 Plug 'mileszs/ack.vim', {'commit': '36e40f9'}
+Plug 'github/copilot.vim', {'commit': '9484e35'}
 
 " Plug 'fatih/vim-go', {'commit': 'e9d7ff3', 'do': ':GoUpdateBinaries'}
 
