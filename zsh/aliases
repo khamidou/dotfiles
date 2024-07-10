@@ -35,7 +35,7 @@ alias vu='vagrant up'
 alias vs='vagrant ssh'
 
 alias yack='ack -C 4 --type=python --ignore-file="match:/test/" --ignore-dir=.venv'
-alias tack='ack -C 4 --type=python --ignore-dir=.venv'
+alias tack='ack -C 4 --type-set tests:match:/test.+\.py/ --tests --ignore-dir=.venv'
 alias tsack='ack -C 4 --ignore-dir=dist'
 alias gack='ack -C 4 --type=go --ignore-dir=vendor'
 
