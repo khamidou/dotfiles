@@ -2,7 +2,7 @@
     excludesfile = ~/.gitignore
 
 [user]
-	email = khamidou@gmail.com
+	email = khamidou@rippling.com
 	name = Karim Hamidou
 
 [pull]

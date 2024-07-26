@@ -12,3 +12,10 @@ fi
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
+
+export REMOTE_PRIVATE_KEY_FILE="/Users/karim/.ssh/id_ed25519"
+export REMOTE_IP=10.201.8.105
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
