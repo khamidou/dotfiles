@@ -1,0 +1,4 @@
+#!/bin/sh
+# some repos have master as default branch, some have main, this script
+# checks out the correct branch for the repo.
+git symbolic-ref refs/remotes/origin/HEAD --short | sed 's/origin\///' | xargs git checkout
