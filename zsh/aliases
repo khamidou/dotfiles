@@ -21,7 +21,7 @@ alias ch='git cherry-pick'
 alias cm='git commit'
 alias st='git status'
 alias pu='git push'
-alias gd='git diff'
+alias gd='git diff --relative'
 alias git-root='cd $(git rev-parse --show-toplevel)'
 alias gds='git difftool -y -x "icdiff"'
 

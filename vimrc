@@ -17,7 +17,7 @@ Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
 Plug 'mileszs/ack.vim', {'commit': '36e40f9'}
 Plug 'github/copilot.vim', {'commit': '9484e35'}
 
-" Plug 'fatih/vim-go', {'commit': 'e9d7ff3', 'do': ':GoUpdateBinaries'}
+Plug 'fatih/vim-go', {'commit': 'e9d7ff3', 'do': ':GoUpdateBinaries'}
 
 " Syntax plugins
 Plug 'scrooloose/syntastic', {'commit': '0295d824'}
@@ -182,3 +182,4 @@ highlight SyntasticWarningSign ctermfg=white ctermbg=red
 " Golang
 " format the current buffer with goimports
 command GoImports %! goimports
+command! JSONClean execute ':%!jsonclean'
