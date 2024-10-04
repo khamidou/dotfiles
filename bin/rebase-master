@@ -1,2 +1,4 @@
 #!/bin/sh
-git fetch && git rebase origin/master
+# some repos have master as default branch, some have main, this script
+# rebases on the correct branch for the repo.
+git fetch && git symbolic-ref refs/remotes/origin/HEAD --short | xargs git rebase
