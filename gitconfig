@@ -1,5 +1,6 @@
 [core]
     excludesfile = ~/.gitignore
+    pager = delta
 
 [user]
 	email = khamidou@rippling.com
@@ -13,7 +14,15 @@
 
 [push]
 	default = current
+
 [pager]
 	branch = false
+
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections

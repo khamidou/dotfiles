@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import datetime
+
+n = datetime.datetime.now(datetime.timezone.utc)
+print(n.isoformat())
