@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import sys
+import json
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: jsonrepl <filename>")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    with open(filename) as f:
+        data = json.load(f)
+
+    print(f'Loaded {filename} with {len(data)} entries')
+    import pdb; pdb.set_trace()
+    pass
+
+if __name__ == '__main__':
+    main()
