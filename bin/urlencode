@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import sys
+import urllib.parse
+
+# Check if we have arguments provided
+if len(sys.argv) < 2:
+    print("Usage: python urlencode.py <string_to_encode>")
+    sys.exit(1)
+
+# Get the string to encode from the command-line argument
+param = sys.argv[1]
+
+# URL encode the parameter
+encoded_param = urllib.parse.quote(param)
+
+# Print the encoded result
+print(encoded_param)
