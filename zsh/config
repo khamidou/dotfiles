@@ -79,6 +79,10 @@ PROMPT='%n@%m:%~/${vcs_info_msg_0_}$ '
 
 bindkey -e # Emacs keybindings
 
+# We need nvm for github copilot vim integration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 case `uname` in
   Darwin)
     . $HOME/.zsh/darwin.sh

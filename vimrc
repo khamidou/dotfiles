@@ -15,7 +15,7 @@ Plug 'vim-scripts/YankRing.vim', {'commit': '28854ab'}
 Plug 'vim-scripts/L9', {'commit': 'c822b05'}
 Plug 'vim-scripts/FuzzyFinder', {'commit': 'b9f1659'}
 Plug 'mileszs/ack.vim', {'commit': '36e40f9'}
-Plug 'github/copilot.vim', {'commit': '9484e35'}
+Plug 'github/copilot.vim', {'commit': '3955014'}
 
 Plug 'fatih/vim-go', {'commit': 'e9d7ff3', 'do': ':GoUpdateBinaries'}
 
@@ -65,6 +65,7 @@ map <Leader>g 1
 map <Leader>g 1
 map <Leader>p :set paste! paste?<CR>
 map <Leader>t :CtrlPTag<CR>
+xnoremap <silent> <Leader>y :<C-u>'<,'>w !pbcopy<CR>
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>

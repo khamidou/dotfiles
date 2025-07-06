@@ -1,2 +1,6 @@
 #!/bin/sh
-git diff --color "$1" | less -r
+if [ -z "$1" ]; then
+  git diff --color | less -r
+else
+  git diff --color "$1" | less -r
+fi
