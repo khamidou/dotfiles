@@ -14,7 +14,7 @@ alias sl='ls'
 alias telnel='telnet'  # This one is particularly annoying.
 
 # git aliases
-alias gl='git log --color'
+alias gl='git log --color | less -R'
 alias co='git checkout'
 alias br='git branch --color --sort=committerdate'
 alias ch='git cherry-pick'
