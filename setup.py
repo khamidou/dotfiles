@@ -34,4 +34,3 @@ for dentry in entries:
         s = f"ln -s {os.path.realpath(dentry)} {linkpath}"
         print(s)
         os.system(s)
-
