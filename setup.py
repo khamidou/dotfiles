@@ -5,7 +5,7 @@ import sys
 import os
 from fnmatch import fnmatch
 
-excluded_files = ["Rakefile", "README.rdoc", "LICENSE", "fish", "setup.py", ".git", ".gitignore"]
+excluded_files = ["Rakefile", "README.rdoc", "LICENSE", "fish", "setup.py", ".git", ".gitignore", "config"]
 exclude_regexp = ["*.swp"]
 dotless_dirs = ["GNUstep"]
 destdir = os.getenv('HOME')
@@ -32,5 +32,19 @@ for dentry in entries:
         linkpath = os.path.join(destdir, "." + dentry)
     if not os.path.exists(linkpath):
         s = f"ln -s {os.path.realpath(dentry)} {linkpath}"
+        print(s)
+        os.system(s)
+
+# also link everything in config/ to ~/.config
+configdir = os.path.join(destdir, ".config")
+if not os.path.exists(configdir):
+    os.mkdir(configdir)
+
+configentries = [file for file in os.listdir("config") if file not in excluded_files
+                                            and not match_globs(file, exclude_regexp)]
+for centry in configentries:
+    linkpath = os.path.join(configdir, centry)
+    if not os.path.exists(linkpath):
+        s = f"ln -s {os.path.realpath(os.path.join('config', centry))} {linkpath}"
         print(s)
         os.system(s)
