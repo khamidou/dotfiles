@@ -19,6 +19,7 @@ SOURCE_DIRS=(
   "$HOME/Documents"
   "$HOME/Desktop"
   "$HOME/Pictures"
+  "$HOME/Library/Group Containers/group.com.apple.notes"
 )
 
 RESTIC_OPTIONS=(-o s3.bucket-lookup=path -o s3.region=auto)
