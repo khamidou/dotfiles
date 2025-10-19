@@ -12,6 +12,7 @@ alias emacs='emacs -nw'
 alias l='less'
 alias sl='ls'
 alias telnel='telnet'  # This one is particularly annoying.
+alias python='python3'
 
 # git aliases
 alias gl='git log --color | less -R'
