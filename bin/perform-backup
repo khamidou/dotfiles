@@ -1,6 +1,8 @@
 #!/bin/zsh
 set -e
 
+echo "Starting backup at $(date)"
+
 # check if restic is installed and the settings are available
 if ! command -v restic &> /dev/null; then
   echo "restic could not be found, please install it first"
